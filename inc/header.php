@@ -37,7 +37,6 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="products.php">Vastu Products</a></li>
                 <li><a href="awards.php">Awards & Recognition</a></li>
-                <li><a href="blogs.php">Blog & Tips</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
             </ul>
 
@@ -75,7 +74,6 @@
             <li><a href="services.php">Services</a></li>
             <li><a href="products.php">Vastu Products</a></li>
             <li><a href="awards.php">Awards & Recognition</a></li>
-            <li><a href="blogs.php">Blog & Tips</a></li>
             <li><a href="contact.php">Contact Us</a></li>
         </ul>
     </nav>
@@ -87,6 +85,15 @@
             display: inline-flex !important;
         }
         #menuToggle {
+            display: none !important;
+        }
+        #mobileMenu, .menus, .overlay, #overlay {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    }
+    @media (max-width: 1023px) {
+        #mobileMenu:not(.open), .menus:not(.open) {
             display: none !important;
         }
     }

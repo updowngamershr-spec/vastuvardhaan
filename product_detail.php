@@ -41,12 +41,28 @@ $products = [
         'sku' => 'VV-VP-005'
     ],
     6 => [
+        'name' => 'पंचतत्व ब्रास व कॉपर उंबरठा पट्ट्या (Vastu Metal Strips)',
+        'category' => 'विना तोडफोड उपाय',
+        'price' => '1,750',
+        'image' => './img/product-brass-strips.jpg',
+        'desc' => 'टॉयलेट किंवा चुकीच्या दिशेचा दरवाजा जमिनीवर उंबरठ्यावर पट्ट्या बसवून विना तोडफोड ब्लॉक करण्यासाठी विशेष सिद्ध ऊर्जा पट्ट्या.',
+        'sku' => 'VV-MS-006'
+    ],
+    7 => [
         'name' => 'पर्सनलाइझ्ड न्यूमरोलॉजी किट (Name Correction Kit)',
         'category' => 'न्यूमरोलॉजी',
         'price' => '999',
         'image' => './img/product-numerology.jpg',
         'desc' => 'तुमच्या जन्मतारखेनुसार सविस्तर अंकशास्त्र अहवाल, नेम स्पेलिंग दुरुस्ती, लकी मोबाईल नंबर, लकी रंग आणि भाग्योदय घडवणारी सही (Signature) नमुना गाइड.',
-        'sku' => 'VV-NK-006'
+        'sku' => 'VV-NK-007'
+    ],
+    8 => [
+        'name' => 'वास्तू ऑरा सॉल्ट व पॉझिटिव्ह एनर्जी धूप किट',
+        'category' => 'ऑरा व शुद्धी किट',
+        'price' => '550',
+        'image' => './img/product-salt-dhoop.jpg',
+        'desc' => 'घरातील क्लेश, आजारपण व नकारात्मक ऊर्जा घालवण्यासाठी नैसर्गिक हिमालयीन रॉक सॉल्ट व आयुर्वेदिक धूप कापूर किट.',
+        'sku' => 'VV-AS-008'
     ],
 ];
 
@@ -55,69 +71,82 @@ $item = $products[$id];
 include 'inc/header.php';
 ?>
 
-<div class="inner_banner" style="padding:40px 0; background:linear-gradient(135deg, #8c6508 0%, #5c4103 100%); text-align:center; color:#fff;">
-    <h1 style="font-size:28px; font-weight:800; margin:0 0 6px;"><?php echo htmlspecialchars($item['name']); ?></h1>
-    <p style="font-size:14px; color:#f3dfbe; margin:0;">वास्तुवर्धन प्रमाणित सिद्ध वास्तू उत्पादन</p>
+<div class="vv-inner-banner">
+    <div class="vv-container">
+        <h1 style="font-size:28px !important;"><?php echo htmlspecialchars($item['name']); ?></h1>
+        <p>वास्तुवर्धन प्रमाणित सिद्ध वास्तू उत्पादन · १००% नैसर्गिक व मंत्रसिद्ध</p>
+    </div>
 </div>
 
-<section style="padding:60px 0; background:#fbf7ee;">
-    <div class="container m-auto px-4" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:start;">
-        <!-- Product Image Stage -->
-        <div style="background:#ffffff; border-radius:20px; padding:30px; border:1px solid #ebd7b5; box-shadow:0 8px 24px rgba(0,0,0,0.06); text-align:center;">
-            <img id="stageImg" src="<?php echo htmlspecialchars($item['image']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" style="max-height:300px; width:auto; max-width:100%; object-fit:contain; margin:0 auto;" onerror="this.src='./img/product2.png'">
-            <div style="margin-top:16px; font-size:12px; color:#8c6508; font-weight:700;">
-                ✨ १००% ओरिजिनल व मंत्रोच्चाराने सिद्ध केलेले
+<section style="padding:60px 0; background:var(--vv-cream-bg);">
+    <div class="vv-container">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:48px; align-items:start;">
+            
+            <!-- Product Image Stage with Pedestal -->
+            <div style="background:#ffffff; border-radius:24px; padding:36px; border:1.5px solid var(--vv-border); box-shadow:0 10px 30px rgba(84, 12, 22, 0.06); text-align:center;">
+                <div class="vv-product-stand" style="height:320px; margin-bottom:20px;">
+                    <img id="stageImg" src="<?php echo htmlspecialchars($item['image']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" style="max-height:280px; width:auto; max-width:100%; object-fit:contain; margin:0 auto;">
+                </div>
+                <div style="font-size:13.5px; color:var(--vv-gold); font-weight:700;">
+                    ✨ १००% ओरिजिनल व शास्त्रोक्त मंत्रोच्चाराने सिद्ध केलेले
+                </div>
             </div>
+
+            <!-- Product Info Card -->
+            <div style="background:#ffffff; border-radius:24px; padding:36px; border:1.5px solid var(--vv-border); box-shadow:0 10px 30px rgba(84, 12, 22, 0.06);">
+                <span class="vv-product-badge" style="margin-bottom:12px;">
+                    <?php echo htmlspecialchars($item['category']); ?>
+                </span>
+                
+                <h1 style="font-size:28px; font-weight:800; color:var(--vv-maroon-deep); margin:0 0 14px; line-height:1.3;">
+                    <?php echo htmlspecialchars($item['name']); ?>
+                </h1>
+
+                <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:14px;">
+                    <span style="font-size:34px; font-weight:800; color:var(--vv-maroon);">₹<?php echo htmlspecialchars($item['price']); ?></span>
+                    <span style="font-size:13px; color:#888;">(सर्व कर व विधी समाविष्ट)</span>
+                </div>
+                <p style="font-size:12.5px; color:#666; margin-bottom:20px;">SKU कोड: <strong><?php echo htmlspecialchars($item['sku']); ?></strong></p>
+
+                <div style="background:#fdf6ec; border:1px solid #f2dfc2; border-radius:12px; padding:12px 16px; font-size:13.5px; color:var(--vv-maroon-deep); font-weight:600; margin-bottom:24px; display:flex; align-items:center; gap:8px;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+                    स्टॉकमध्ये उपलब्ध · संपूर्ण भारतात सुरक्षित कुरिअर डिलिव्हरी
+                </div>
+
+                <div style="display:flex; flex-direction:column; gap:12px; font-size:14px; color:var(--vv-text-muted); margin-bottom:28px;">
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <i class="ti ti-truck" style="color:var(--vv-gold); font-size:18px;"></i> सुरक्षित व फास्ट पॅकिंगसह घरपोच डिलिव्हरी
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <i class="ti ti-shield-check" style="color:var(--vv-gold); font-size:18px;"></i> ओरिजिनल व शास्त्रोक्त शुद्धीकरणाची १००% हमी
+                    </div>
+                    <div style="display:flex; align-items:center; gap:10px;">
+                        <i class="ti ti-phone-call" style="color:var(--vv-gold); font-size:18px;"></i> फोन सपोर्ट: ९९२१३ १४५४१
+                    </div>
+                </div>
+
+                <p style="font-size:15px; line-height:1.75; color:var(--vv-text-muted); margin-bottom:28px; padding-top:16px; border-top:1px solid var(--vv-border);">
+                    <?php echo htmlspecialchars($item['desc']); ?>
+                </p>
+
+                <!-- Order Action Buttons -->
+                <div style="display:flex; flex-wrap:wrap; gap:14px;">
+                    <a href="https://wa.me/919921314541?text=Hello%20Vastuvardhaan,%20I%20want%20to%20order:%20<?php echo urlencode($item['name']); ?>%20(Price:%20INR%20<?php echo $item['price']; ?>)" target="_blank" class="vv-btn-primary" style="flex:1; text-align:center; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px;">
+                        <i class="ti ti-brand-whatsapp" style="font-size:20px;"></i> WhatsApp द्वारे ऑर्डर करा
+                    </a>
+                    <a href="tel:9921314541" class="vv-btn-outline" style="padding:14px 20px; display:flex; align-items:center; justify-content:center; gap:6px;">
+                        <i class="ti ti-phone-call" style="font-size:18px;"></i> कॉल करा
+                    </a>
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Product Info Card -->
-        <div style="background:#ffffff; border-radius:20px; padding:36px; border:1px solid #ebd7b5; box-shadow:0 8px 24px rgba(0,0,0,0.06);">
-            <span style="display:inline-block; background:#faebd7; color:#8c6508; font-size:12px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px;">
-                <?php echo htmlspecialchars($item['category']); ?>
-            </span>
-            <h1 style="font-size:26px; font-weight:800; color:#1a202c; margin:0 0 12px; line-height:1.3;">
-                <?php echo htmlspecialchars($item['name']); ?>
-            </h1>
-
-            <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:14px;">
-                <span style="font-size:32px; font-weight:800; color:#aa770d;">₹<?php echo htmlspecialchars($item['price']); ?></span>
-                <span style="font-size:13px; color:#888;">(सर्व कर व विधी समाविष्ट)</span>
-            </div>
-            <p style="font-size:12px; color:#666; margin-bottom:20px;">SKU: <strong><?php echo htmlspecialchars($item['sku']); ?></strong></p>
-
-            <div style="background:#fdf6ec; border:1px solid #f2dfc2; border-radius:10px; padding:12px 16px; font-size:13px; color:#8c6508; font-weight:600; margin-bottom:24px; display:flex; align-items:center; gap:8px;">
-                <span style="width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
-                स्टॉकमध्ये उपलब्ध · संपूर्ण भारतात सुरक्षित कुरिअर डिलिव्हरी
-            </div>
-
-            <div style="display:flex; flex-direction:column; gap:10px; font-size:13px; color:#4a5568; margin-bottom:28px;">
-                <div style="display:flex; align-items:center; gap:8px;">
-                    <i class="ti ti-truck" style="color:#aa770d; font-size:16px;"></i> सुरक्षित व फास्ट पॅकिंगसह घरपोच डिलिव्हरी
-                </div>
-                <div style="display:flex; align-items:center; gap:8px;">
-                    <i class="ti ti-shield-check" style="color:#aa770d; font-size:16px;"></i> ओरिजिनल व शास्त्रोक्त शुद्धीकरणाची १००% हमी
-                </div>
-                <div style="display:flex; align-items:center; gap:8px;">
-                    <i class="ti ti-sparkles" style="color:#aa770d; font-size:16px;"></i> परिधान करण्याची योग्य पद्धत व मुहूर्ताची माहिती सोबत
-                </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:30px;">
-                <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20<?php echo urlencode($item['name']); ?>" target="_blank" class="vv-btn-primary" style="flex:1; text-align:center; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px;">
-                    <i class="ti ti-brand-whatsapp text-xl"></i> WhatsApp वर थेट ऑर्डर करा
-                </a>
-                <a href="cart.php?add=<?php echo $id; ?>" class="vv-btn-secondary" style="flex:1; text-align:center; padding:14px;">
-                    Add to Cart · ₹<?php echo htmlspecialchars($item['price']); ?>
-                </a>
-            </div>
-
-            <h3 style="font-size:17px; font-weight:700; color:#1a202c; margin-bottom:8px; border-bottom:1px solid #eee; padding-bottom:6px;">
-                उत्पादनाची माहिती (Product Details)
-            </h3>
-            <p style="font-size:14px; line-height:1.7; color:#555; margin:0;">
-                <?php echo htmlspecialchars($item['desc']); ?>
-            </p>
+        <div style="margin-top:40px; text-align:center;">
+            <a href="products.php" style="color:var(--vv-maroon); font-weight:700; text-decoration:none; font-size:15px;">
+                ← सर्व उत्पादने पाहण्यासाठी परत जा
+            </a>
         </div>
     </div>
 </section>

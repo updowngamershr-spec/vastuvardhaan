@@ -254,9 +254,9 @@
             <!-- Product 1: Pyrite -->
             <div class="vv-product-card">
                 <div>
-                    <span class="vv-product-badge">Money Magnet</span>
-                    <div class="vv-product-img-wrap">
-                        <img src="./img/product-pyrite.jpg" alt="पायराइट मनी ब्रेसलेट" style="max-height:165px; object-fit:contain;">
+                    <span class="vv-product-badge">Money Magnet · धनवर्धक</span>
+                    <div class="vv-product-stand">
+                        <img src="./img/product-pyrite.jpg" alt="पायराइट मनी ब्रेसलेट">
                     </div>
                     <h3>नॅचरल पायराइट मनी ब्रेसलेट</h3>
                     <p>सोन्यासारखा चमकणारा अस्सल पायराइट स्टोन. व्यवसायात नवीन ग्राहक, धनप्राप्ती आणि आर्थिक स्थैर्य आकर्षित करतो.</p>
@@ -271,8 +271,8 @@
             <div class="vv-product-card">
                 <div>
                     <span class="vv-product-badge">धनलक्ष्मी स्टोन</span>
-                    <div class="vv-product-img-wrap">
-                        <img src="./img/product-citrine.jpg" alt="सिट्रीन धनलक्ष्मी ब्रेसलेट" style="max-height:165px; object-fit:contain;">
+                    <div class="vv-product-stand">
+                        <img src="./img/product-citrine.jpg" alt="सिट्रीन धनलक्ष्मी ब्रेसलेट">
                     </div>
                     <h3>सिट्रीन धनलक्ष्मी क्रिस्टल ब्रेसलेट</h3>
                     <p>व्यापारी व नोकरदारांसाठी अत्यंत भाग्यशाली स्टोन. निर्णयक्षमता वाढवून पैशांची बचत आणि आवक सुधारतो.</p>
@@ -287,8 +287,8 @@
             <div class="vv-product-card">
                 <div>
                     <span class="vv-product-badge">आत्मविश्वास व धाडस</span>
-                    <div class="vv-product-img-wrap">
-                        <img src="./img/product-tigereye.jpg" alt="टायगर आय ब्रेसलेट" style="max-height:165px; object-fit:contain;">
+                    <div class="vv-product-stand">
+                        <img src="./img/product-tigereye.jpg" alt="टायगर आय ब्रेसलेट">
                     </div>
                     <h3>टायगर आय पॉवर ब्रेसलेट</h3>
                     <p>भीती दूर करून आत्मविश्वास निर्माण करतो, नजर दोषापासून संरक्षण देतो आणि कामावर लक्ष केंद्रित करण्यास मदत करतो.</p>
@@ -303,8 +303,8 @@
             <div class="vv-product-card">
                 <div>
                     <span class="vv-product-badge">नजर सुरक्षा</span>
-                    <div class="vv-product-img-wrap">
-                        <img src="./img/product-tourmaline.jpg" alt="ब्लॅक टूर्मलाइन ब्रेसलेट" style="max-height:165px; object-fit:contain;">
+                    <div class="vv-product-stand">
+                        <img src="./img/product-tourmaline.jpg" alt="ब्लॅक टूर्मलाइन ब्रेसलेट">
                     </div>
                     <h3>ब्लॅक टूर्मलाइन नजर सुरक्षा ब्रेसलेट</h3>
                     <p>वाईट नजर, ईर्ष्या आणि बाहेरील नकारात्मक ऊर्जेपासून अभेद्य सुरक्षा कवच प्रदान करणारे नैसर्गिक रत्न ब्रेसलेट.</p>
@@ -319,8 +319,8 @@
             <div class="vv-product-card">
                 <div>
                     <span class="vv-product-badge">विना तोडफोड उपाय</span>
-                    <div class="vv-product-img-wrap">
-                        <img src="./img/product-pyramid.jpg" alt="ब्रास वास्तू पिरॅमिड" style="max-height:165px; object-fit:contain;">
+                    <div class="vv-product-stand">
+                        <img src="./img/product-pyramid.jpg" alt="ब्रास वास्तू पिरॅमिड">
                     </div>
                     <h3>ब्रास वास्तू ऊर्जा पिरॅमिड (९x९)</h3>
                     <p>घरातील किंवा कार्यालयातील दिशा दोष, कट कॉर्नर आणि प्रवेशद्वार दोषांवर तोडफोड न करता अत्यंत प्रभावशाली उपाय.</p>
@@ -335,8 +335,8 @@
             <div class="vv-product-card">
                 <div>
                     <span class="vv-product-badge">न्यूमरोलॉजी विशेष</span>
-                    <div class="vv-product-img-wrap">
-                        <img src="./img/product-numerology.jpg" alt="न्यूमरोलॉजी किट" style="max-height:165px; object-fit:contain;">
+                    <div class="vv-product-stand">
+                        <img src="./img/product-numerology.jpg" alt="न्यूमरोलॉजी किट">
                     </div>
                     <h3>पर्सनलाइझ्ड न्यूमरोलॉजी किट</h3>
                     <p>जन्मतारखेनुसार संपूर्ण अंकशास्त्र रिपोर्ट, लकी नंबर, सही (Signature) नमुना आणि नेम स्पेलिंग गाइड.</p>
@@ -373,7 +373,7 @@
                         </div>
                         <div>
                             <div style="font-size:12px; color:#e0d0bc;">थेट फोन किंवा WhatsApp</div>
-                            <div style="font-size:18px; font-weight:700; color:#fff;">+91 98765 43210</div>
+                            <div style="font-size:18px; font-weight:700; color:#fff;"><a href="tel:9921314541" style="color:#fff; text-decoration:none;">+91 99213 14541</a></div>
                         </div>
                     </div>
                     <div style="display:flex; align-items:center; gap:14px;">

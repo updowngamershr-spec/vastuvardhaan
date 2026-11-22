@@ -117,6 +117,73 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
+/* Bulletproof Mobile Menu Drawer & Complete Desktop Suppression */
+#mobileMenu,
+.menus {
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    #mobileMenu.open,
+    .menus.open {
+        display: block !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        z-index: 99999;
+        box-shadow: -6px 0 30px rgba(0, 0, 0, 0.28);
+        padding: 24px;
+        overflow-y: auto;
+    }
+    
+    #mobileMenu ul,
+    .menus ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+    
+    #mobileMenu ul li,
+    .menus ul li {
+        margin-bottom: 12px;
+        border-bottom: 1px solid #ebd9c0;
+        padding-bottom: 8px;
+    }
+    
+    #mobileMenu ul li a,
+    .menus ul li a {
+        color: var(--vv-maroon-deep);
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    #mobileMenu ul li a:hover,
+    .menus ul li a:hover {
+        color: var(--vv-gold);
+    }
+}
+
+@media (min-width: 1024px) {
+    #mobileMenu,
+    .menus,
+    .menus ul,
+    #overlay,
+    .overlay {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        overflow: hidden !important;
+    }
+}
+
 /* ==========================================================================
    Hero Banner with Mountain Backdrop & Rotating Sacred Vastu Chakra
    ========================================================================== */
@@ -585,7 +652,131 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* Products Section */
+/* ==========================================================================
+   Inner Hero Banner (Royal Maroon & Gold with Sacred Vedic Texture)
+   ========================================================================== */
+.vv-inner-banner,
+.inner_banner {
+    position: relative;
+    padding: 55px 0 45px !important;
+    background: linear-gradient(135deg, var(--vv-maroon-deep) 0%, var(--vv-maroon) 55%, #3d070e 100%) !important;
+    border-bottom: 3.5px solid var(--vv-gold) !important;
+    text-align: center;
+    color: #ffffff !important;
+    overflow: hidden;
+}
+
+.vv-inner-banner::before,
+.inner_banner::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(200, 150, 44, 0.15) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.vv-inner-banner h1,
+.inner_banner h1 {
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 10px !important;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.vv-inner-banner p,
+.inner_banner p {
+    font-size: 15.5px !important;
+    color: #f7e6cd !important;
+    margin: 0 auto !important;
+    max-width: 680px !important;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   Product Stand & Pedestal Showcase Card Effects
+   ========================================================================== */
+.vv-product-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1.5px solid var(--vv-border);
+    padding: 22px 20px;
+    box-shadow: 0 6px 20px rgba(84, 12, 22, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.vv-product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(84, 12, 22, 0.12);
+    border-color: var(--vv-gold);
+}
+
+/* Sacred Pedestal Stand for Products */
+.vv-product-stand {
+    position: relative;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #ffffff 40%, #fdf8ee 100%);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 1px solid #ebd9c0;
+    overflow: hidden;
+}
+
+.vv-product-stand::after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 14px;
+    background: radial-gradient(ellipse at center, rgba(200, 150, 44, 0.35) 0%, rgba(84, 12, 22, 0.15) 50%, transparent 80%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.vv-product-stand img {
+    max-height: 165px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    z-index: 2;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.15));
+}
+
+.vv-product-card:hover .vv-product-stand img {
+    transform: scale(1.05);
+}
+
+/* About Page Arched Frame Wrapper */
+.vv-about-portrait-wrap {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .vv-about-portrait-wrap {
+        width: 360px;
+        height: 450px;
+    }
+}
+
 .vv-products-section {
     padding: 70px 0;
     background: var(--vv-cream-bg);
