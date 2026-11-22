@@ -1,68 +1,65 @@
 <?php include 'inc/header.php'; ?>
 
 <!-- ==========================================================================
-     ORIGINAL BESPOKE HERO BANNER (Luxury Cream & Royal Maroon)
+     HERO BANNER: Mountain Landscape + Rotating Sacred Vastu Chakra
      ========================================================================== -->
-<section class="vv-hero-original">
-    <div class="container m-auto px-4">
-        <div class="vv-hero-layout">
-            <!-- Left Side: Content & Action -->
-            <div>
-                <div class="vv-hero-badge-pill">
+<section class="vv-mountain-hero">
+    <div class="vv-container">
+        <div class="vv-hero-grid">
+            <!-- Left Column: Content & Buttons -->
+            <div class="vv-hero-content">
+                <div class="vv-hero-badge">
                     <span style="width:8px; height:8px; border-radius:50%; background:#10b981; display:inline-block;"></span>
                     <span>✨ शुद्ध वैदिक ज्ञान व शास्त्रीय मार्गदर्शन</span>
                 </div>
                 
-                <h1 class="vv-hero-title-main">
-                    वास्तू, अंकशास्त्र आणि ज्योतिषीय उपायांनी आणा जीवनात <span class="gold-txt">सुख, समृद्धी आणि यश!</span>
+                <h1 class="vv-hero-title">
+                    वास्तू, अंकशास्त्र आणि ज्योतिषीय उपायांनी आणा जीवनात <span class="gold-highlight">सुख, समृद्धी आणि यश!</span>
                 </h1>
                 
-                <p class="vv-hero-lead">
+                <p class="vv-hero-subtitle">
                     <strong>वास्तुवर्धन</strong> — घर किंवा व्यवसायात <strong>१००% विना तोडफोड</strong> वास्तू दोष निवारण, शास्त्रशुद्ध न्यूमरोलॉजी (नाव व बिझनेस नेम करेक्शन) आणि अचूक जन्मकुंडली विश्लेषण.
                 </p>
 
                 <!-- Highlights Pills -->
-                <div class="vv-hero-highlights">
-                    <div class="vv-highlight-item">
-                        <i class="ti ti-shield-check"></i>
+                <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:28px;">
+                    <div style="background:#ffffff; border:1px solid var(--vv-border); padding:8px 16px; border-radius:10px; font-size:13px; font-weight:700; color:var(--vv-maroon-deep); display:flex; align-items:center; gap:8px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+                        <i class="ti ti-shield-check" style="color:var(--vv-gold); font-size:18px;"></i>
                         <span>विना तोडफोड उपाय</span>
                     </div>
-                    <div class="vv-highlight-item">
-                        <i class="ti ti-numbers"></i>
+                    <div style="background:#ffffff; border:1px solid var(--vv-border); padding:8px 16px; border-radius:10px; font-size:13px; font-weight:700; color:var(--vv-maroon-deep); display:flex; align-items:center; gap:8px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+                        <i class="ti ti-numbers" style="color:var(--vv-gold); font-size:18px;"></i>
                         <span>अचूक अंकशास्त्र</span>
                     </div>
-                    <div class="vv-highlight-item">
-                        <i class="ti ti-award"></i>
+                    <div style="background:#ffffff; border:1px solid var(--vv-border); padding:8px 16px; border-radius:10px; font-size:13px; font-weight:700; color:var(--vv-maroon-deep); display:flex; align-items:center; gap:8px; box-shadow:0 2px 6px rgba(0,0,0,0.03);">
+                        <i class="ti ti-award" style="color:var(--vv-gold); font-size:18px;"></i>
                         <span>राज्यस्तरीय सन्मान</span>
                     </div>
                 </div>
 
-                <!-- CTA Action Buttons -->
-                <div class="vv-btn-row">
-                    <a href="services.php" class="vv-btn-maroon">
+                <!-- Custom Action Buttons -->
+                <div class="vv-hero-buttons">
+                    <a href="services.php" class="vv-btn-primary">
                         आमच्या सेवा पहा <i class="ti ti-arrow-right"></i>
                     </a>
-                    <a href="consultation.php" class="vv-btn-cream-outline">
+                    <a href="consultation.php" class="vv-btn-outline">
                         <i class="ti ti-calendar-event"></i> सल्ला बुक करा
                     </a>
                 </div>
             </div>
 
-            <!-- Right Side: Bespoke Luxury Shield Presentation -->
-            <div class="vv-hero-card-composition">
-                <!-- Floating Trust Badge -->
-                <div class="vv-hero-float-iso">
-                    <i class="ti ti-rosette-discount-check-filled"></i>
-                    <span>ISO 9001:2015<br><small style="font-weight:600; color:#666;">प्रमाणित पद्धती</small></span>
-                </div>
+            <!-- Right Column: Rotating Vastu Chakra + Arched Portrait Frame -->
+            <div class="vv-hero-visual-wrap">
+                <!-- Rotating Vastu Energy Chakra SVG -->
+                <img src="./img/vastu-chakra.svg" class="vv-rotating-chakra" alt="Sacred Vastu Chakra">
 
-                <!-- Main Royal Shield Frame -->
-                <div class="vv-portrait-royal-shield">
+                <!-- Arched Portrait Frame -->
+                <div class="vv-hero-portrait-arch">
                     <img src="./img/consultant-expert.jpg" alt="वास्तुवर्धन मुख्य सल्लागार">
                 </div>
 
-                <!-- Floating Expert Designation Tag -->
-                <div class="vv-hero-floating-badge">
+                <!-- Floating Expert Badge -->
+                <div class="vv-arch-badge">
                     ⭐ वास्तू, अंकशास्त्र व ज्योतिष तज्ज्ञ
                 </div>
             </div>
@@ -72,7 +69,7 @@
 
 <!-- Trust Counters Strip -->
 <section class="vv-trust-strip">
-    <div class="container m-auto px-4">
+    <div class="vv-container">
         <div class="vv-trust-grid">
             <div class="vv-trust-card">
                 <h3>10+ वर्षे</h3>
@@ -96,10 +93,10 @@
 
 <!-- About Section with Felicitation Award Photo -->
 <section style="padding:70px 0; background:#ffffff;">
-    <div class="container m-auto px-4">
+    <div class="vv-container">
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px; align-items:center;">
             <!-- Award Photo -->
-            <div style="border-radius:24px; overflow:hidden; box-shadow:0 12px 35px rgba(91,15,25,0.12); border:4px solid var(--vv-border); position:relative;">
+            <div style="border-radius:24px; overflow:hidden; box-shadow:0 12px 35px rgba(84,12,22,0.12); border:4px solid var(--vv-border); position:relative;">
                 <img src="./img/award-felicitation.jpg" alt="भव्य सन्मान सोहळा" style="width:100%; height:auto; display:block; object-fit:cover;">
                 <div style="background:var(--vv-maroon-deep); color:#fff; padding:14px; text-align:center; font-size:13px; font-weight:700; border-top:2px solid var(--vv-gold);">
                     <i class="ti ti-trophy" style="color:var(--vv-gold);"></i> वेदऋषी फाउंडेशन आणि ज्योतिष वास्तू विश्व संशोधन केंद्र, पुणे तर्फे सन्मानित
@@ -119,18 +116,18 @@
                 <p style="font-size:15px; line-height:1.7; color:var(--vv-text-muted); margin-bottom:24px;">
                     अनेकदा घरात किंवा व्यवसायात विनाकारण आर्थिक नुकसान, आरोग्य तक्रारी किंवा कलह होतात. वास्तुवर्धनच्या माध्यमातून आम्ही कोणत्याही प्रकारची भिंत किंवा बांधकाम न तोडता (Non-Demolition Remedies), योग्य दिशानिहाय ऊर्जा संतुलन, लकी नंबर व नेम अलाइनमेंट द्वारे कायमस्वरूपी यश मिळवून देतो.
                 </p>
-                <div class="vv-btn-row">
-                    <a href="about.php" class="vv-btn-maroon">आमच्याबद्दल अधिक जाणून घ्या →</a>
-                    <a href="awards.php" class="vv-btn-cream-outline">पुरस्कार व सन्मान पहा</a>
+                <div style="display:flex; flex-wrap:wrap; gap:14px;">
+                    <a href="about.php" class="vv-btn-primary">आमच्याबद्दल अधिक जाणून घ्या →</a>
+                    <a href="awards.php" class="vv-btn-outline">पुरस्कार व सन्मान पहा</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Core Services Section (3 Distinct Pillars) -->
+<!-- Core Services Section (with Gentle Mountain Silhouette Backdrop) -->
 <section class="vv-services-section" id="services">
-    <div class="container m-auto px-4">
+    <div class="vv-container">
         <div class="vv-section-header">
             <span class="vv-section-sub">✨ आमच्या प्रमुख सेवा</span>
             <h2 class="vv-section-title">परिपूर्ण व खात्रीशीर कन्सल्टेशन सेवा</h2>
@@ -157,7 +154,7 @@
                     </ul>
                     <div class="vv-service-card-footer">
                         <a href="services.php#vastu" style="color:var(--vv-maroon); font-weight:700; font-size:14px; text-decoration:none;">सविस्तर माहिती →</a>
-                        <a href="consultation.php?service=vastu" class="vv-btn-maroon" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
+                        <a href="consultation.php?service=vastu" class="vv-btn-primary" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
                     </div>
                 </div>
             </div>
@@ -178,7 +175,7 @@
                     </ul>
                     <div class="vv-service-card-footer">
                         <a href="services.php#numerology" style="color:var(--vv-maroon); font-weight:700; font-size:14px; text-decoration:none;">सविस्तर माहिती →</a>
-                        <a href="consultation.php?service=numerology" class="vv-btn-maroon" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
+                        <a href="consultation.php?service=numerology" class="vv-btn-primary" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
                     </div>
                 </div>
             </div>
@@ -199,7 +196,7 @@
                     </ul>
                     <div class="vv-service-card-footer">
                         <a href="services.php#astrology" style="color:var(--vv-maroon); font-weight:700; font-size:14px; text-decoration:none;">सविस्तर माहिती →</a>
-                        <a href="consultation.php?service=astrology" class="vv-btn-maroon" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
+                        <a href="consultation.php?service=astrology" class="vv-btn-primary" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
                     </div>
                 </div>
             </div>
@@ -209,7 +206,7 @@
 
 <!-- Why Choose Vastuvardhaan -->
 <section class="vv-why-section">
-    <div class="container m-auto px-4">
+    <div class="vv-container">
         <div class="vv-section-header">
             <span class="vv-section-sub">✨ आमची वैशिष्ट्ये</span>
             <h2 class="vv-section-title">वास्तुवर्धन का निवडावे?</h2>
@@ -241,9 +238,9 @@
     </div>
 </section>
 
-<!-- Vastu Products (All New Bracelets, Pyramids & Numerology Kits - NO Yantras) -->
+<!-- Vastu Products Grid -->
 <section class="vv-products-section" id="products">
-    <div class="container m-auto px-4">
+    <div class="vv-container">
         <div class="vv-section-header">
             <span class="vv-section-sub">✨ सकारात्मक ऊर्जा व साधना उत्पादने</span>
             <h2 class="vv-section-title">वास्तू ब्रेसलेट्स व ऊर्जा उत्पादने</h2>
@@ -266,7 +263,7 @@
                 </div>
                 <div class="vv-product-bottom">
                     <span class="vv-price">₹1,199</span>
-                    <a href="product_detail.php?id=1" class="vv-btn-maroon" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                    <a href="product_detail.php?id=1" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
@@ -282,7 +279,7 @@
                 </div>
                 <div class="vv-product-bottom">
                     <span class="vv-price">₹850</span>
-                    <a href="product_detail.php?id=2" class="vv-btn-maroon" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                    <a href="product_detail.php?id=2" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
@@ -298,7 +295,7 @@
                 </div>
                 <div class="vv-product-bottom">
                     <span class="vv-price">₹799</span>
-                    <a href="product_detail.php?id=3" class="vv-btn-maroon" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                    <a href="product_detail.php?id=3" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
@@ -314,7 +311,7 @@
                 </div>
                 <div class="vv-product-bottom">
                     <span class="vv-price">₹699</span>
-                    <a href="product_detail.php?id=4" class="vv-btn-maroon" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                    <a href="product_detail.php?id=4" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
@@ -330,7 +327,7 @@
                 </div>
                 <div class="vv-product-bottom">
                     <span class="vv-price">₹1,499</span>
-                    <a href="product_detail.php?id=5" class="vv-btn-maroon" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                    <a href="product_detail.php?id=5" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
@@ -346,20 +343,20 @@
                 </div>
                 <div class="vv-product-bottom">
                     <span class="vv-price">₹999</span>
-                    <a href="product_detail.php?id=6" class="vv-btn-maroon" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                    <a href="product_detail.php?id=6" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
         </div>
 
         <div style="text-align:center; margin-top:40px;">
-            <a href="products.php" class="vv-btn-maroon" style="padding:14px 34px; font-size:16px;">सर्व वास्तू प्रॉडक्ट्स पहा →</a>
+            <a href="products.php" class="vv-btn-primary" style="padding:14px 34px; font-size:16px;">सर्व वास्तू प्रॉडक्ट्स पहा →</a>
         </div>
     </div>
 </section>
 
 <!-- Direct Booking & Consultation Form Section -->
 <section style="padding:70px 0; background:var(--vv-maroon-deep); color:#fff;" id="bookingForm">
-    <div class="container m-auto px-4">
+    <div class="vv-container">
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px; align-items:center;">
             <div>
                 <span class="vv-section-sub" style="color:var(--vv-gold-light);">✨ वैयक्तिक मार्गदर्शन</span>
@@ -420,7 +417,7 @@
                             <option value="all">सर्वसमावेशक कन्सल्टेशन</option>
                         </select>
                     </div>
-                    <button type="submit" class="vv-btn-maroon" style="width:100%; border:none; cursor:pointer; padding:13px; font-size:15px; margin-top:8px; justify-content:center;">
+                    <button type="submit" class="vv-btn-primary" style="width:100%; border:none; cursor:pointer; padding:13px; font-size:15px; margin-top:8px; justify-content:center;">
                         अपॉइंटमेंट सबमिट करा →
                     </button>
                 </form>

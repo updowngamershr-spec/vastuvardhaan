@@ -1,246 +1,312 @@
 /* ==========================================================================
-   Vastuvardhaan - Luxury Cream & Royal Maroon Custom Theme
-   Unique Bespoke Design (No template clone)
+   Vastuvardhaan - Luxury Cream & Royal Maroon Theme with Rotating Vastu Chakra
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --vv-maroon-deep: #5b0f19;
-    --vv-maroon: #701420;
+    --vv-maroon-deep: #540c16;
+    --vv-maroon: #6e1320;
     --vv-maroon-light: #8a1d2c;
     --vv-gold: #c8962c;
     --vv-gold-light: #e5b657;
-    --vv-cream-bg: #fbf7f0;
+    --vv-cream-bg: #fdfaf4;
     --vv-cream-card: #ffffff;
-    --vv-cream-alt: #f5eedf;
     --vv-border: #ebd9c0;
     --vv-text-dark: #1e1b18;
-    --vv-text-muted: #574e44;
+    --vv-text-muted: #524940;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body, button, input, select, textarea {
     font-family: 'Mukta', 'Poppins', sans-serif !important;
     color: var(--vv-text-dark);
     background-color: var(--vv-cream-bg);
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Mukta', 'Poppins', sans-serif !important;
     font-weight: 700;
-    color: var(--vv-text-dark);
-    line-height: 1.28;
+    color: var(--vv-maroon-deep);
+    line-height: 1.25;
 }
 
-/* Header */
+/* Bulletproof Centered Container */
+.vv-container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    box-sizing: border-box;
+}
+
+/* Navigation */
 .navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background: #ffffff;
     border-bottom: 2px solid var(--vv-gold);
-    box-shadow: 0 4px 15px rgba(91, 15, 25, 0.05);
+    box-shadow: 0 4px 16px rgba(84, 12, 22, 0.06);
     padding: 10px 0;
+}
+
+.navigation .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.navigation .logo a {
+    display: flex;
+    align-items: center;
 }
 
 .navigation .logo img {
     height: 48px;
     width: auto;
-    max-width: 170px;
+    max-width: 160px;
     object-fit: contain;
 }
 
-.menus ul li a {
-    color: var(--vv-maroon-deep) !important;
-    font-weight: 600;
-    font-size: 15px;
-    transition: color 0.2s;
+.navigation .desktop-menu {
+    display: none;
 }
 
-.menus ul li a:hover, .menus ul li a.active {
-    color: var(--vv-gold) !important;
-}
+@media (min-width: 1024px) {
+    .navigation .desktop-menu {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navigation .desktop-menu li a {
+        color: var(--vv-maroon-deep);
+        font-weight: 600;
+        font-size: 14.5px;
+        text-decoration: none;
+        white-space: nowrap;
+        padding: 6px 4px;
+        transition: color 0.2s;
+    }
 
-/* ==========================================================================
-   ORIGINAL BESPOKE HERO BANNER (Luxury Cream & Maroon Layout)
-   ========================================================================== */
-.vv-hero-original {
-    position: relative;
-    padding: 70px 0 50px;
-    background: linear-gradient(135deg, #fdfaf4 0%, #f7efe1 50%, #f0e3cc 100%);
-    overflow: hidden;
-}
-
-/* Subtle sacred aura watermark backdrop */
-.vv-hero-original::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 800px;
-    height: 800px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(200, 150, 44, 0.08) 0%, rgba(112, 20, 32, 0.04) 50%, transparent 70%);
-    pointer-events: none;
-}
-
-.vv-hero-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-@media (min-width: 992px) {
-    .vv-hero-layout {
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 50px;
+    .navigation .desktop-menu li a:hover {
+        color: var(--vv-gold);
     }
 }
 
-.vv-hero-badge-pill {
+.navigation .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Hero Banner with Mountain Backdrop & Rotating Sacred Vastu Chakra
+   ========================================================================== */
+.vv-mountain-hero {
+    position: relative;
+    padding: 65px 0 50px;
+    background-color: #fbf1e3;
+    background-image: linear-gradient(to right, rgba(253, 248, 240, 0.95) 0%, rgba(251, 241, 227, 0.90) 55%, rgba(248, 234, 215, 0.85) 100%), url('../img/hero-mountain-bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.vv-hero-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+@media (min-width: 992px) {
+    .vv-hero-grid {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .vv-hero-content {
+        flex: 1.15;
+    }
+    .vv-hero-visual-wrap {
+        flex: 0.85;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.vv-hero-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.95);
     border: 1.5px solid var(--vv-gold);
     padding: 6px 18px;
     border-radius: 30px;
     font-size: 14px;
     font-weight: 700;
     color: var(--vv-maroon);
-    box-shadow: 0 4px 12px rgba(112, 20, 32, 0.08);
-    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(84, 12, 22, 0.08);
+    margin-bottom: 18px;
 }
 
-.vv-hero-title-main {
-    font-size: 34px;
+.vv-hero-title {
+    font-size: 32px;
     font-weight: 800;
     color: var(--vv-maroon-deep);
     margin: 0 0 16px;
     line-height: 1.25;
 }
 
-.vv-hero-title-main span.gold-txt {
+.vv-hero-title span.gold-highlight {
     color: var(--vv-gold);
     display: inline-block;
 }
 
 @media (min-width: 768px) {
-    .vv-hero-title-main {
-        font-size: 44px;
+    .vv-hero-title {
+        font-size: 42px;
     }
 }
 
-.vv-hero-lead {
+.vv-hero-subtitle {
     font-size: 16px;
     line-height: 1.7;
     color: var(--vv-text-muted);
     margin-bottom: 24px;
 }
 
-.vv-hero-lead strong {
-    color: var(--vv-maroon);
-}
-
-/* Feature Badges under Lead */
-.vv-hero-highlights {
+.vv-hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 28px;
+    gap: 14px;
+    margin-bottom: 24px;
 }
 
-.vv-highlight-item {
-    background: #ffffff;
-    border: 1px solid var(--vv-border);
-    padding: 8px 16px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--vv-maroon-deep);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-}
-
-.vv-highlight-item i {
-    color: var(--vv-gold);
-    font-size: 18px;
-}
-
-/* CTA Buttons */
-.vv-btn-maroon {
+/* Custom Buttons */
+.vv-btn-primary {
     background: linear-gradient(135deg, var(--vv-maroon) 0%, var(--vv-maroon-deep) 100%);
     color: #ffffff !important;
     padding: 13px 30px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 15px;
-    box-shadow: 0 6px 18px rgba(112, 20, 32, 0.3);
+    box-shadow: 0 6px 18px rgba(84, 12, 22, 0.3);
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    text-decoration: none;
     transition: all 0.25s ease;
     border: none;
     cursor: pointer;
 }
 
-.vv-btn-maroon:hover {
+.vv-btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(112, 20, 32, 0.45);
+    box-shadow: 0 8px 24px rgba(84, 12, 22, 0.45);
     background: linear-gradient(135deg, var(--vv-maroon-light) 0%, var(--vv-maroon) 100%);
 }
 
-.vv-btn-cream-outline {
-    background: #ffffff;
+.vv-btn-outline {
+    background: rgba(255, 255, 255, 0.95);
     color: var(--vv-maroon) !important;
     border: 2px solid var(--vv-gold);
     padding: 11px 28px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 15px;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    text-decoration: none;
     transition: all 0.25s ease;
 }
 
-.vv-btn-cream-outline:hover {
-    background: var(--vv-cream-alt);
-    border-color: var(--vv-maroon);
+.vv-btn-outline:hover {
+    background: #faebd7;
 }
 
-/* Right Side: Creative Executive Shield / Card Composition */
-.vv-hero-card-composition {
+/* Rotating Vastu Energy Chakra & Arched Portrait Frame */
+.vv-hero-visual-wrap {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px 0;
-}
-
-.vv-portrait-royal-shield {
-    position: relative;
-    width: 320px;
-    height: 410px;
-    border-radius: 30px;
-    overflow: hidden;
-    border: 5px solid var(--vv-gold);
-    box-shadow: 0 20px 45px rgba(91, 15, 25, 0.25);
-    background: linear-gradient(180deg, #ffffff 0%, #faebd7 100%);
-    z-index: 2;
+    justify-content: center;
+    width: 340px;
+    height: 440px;
 }
 
 @media (max-width: 640px) {
-    .vv-portrait-royal-shield {
-        width: 270px;
+    .vv-hero-visual-wrap {
+        width: 280px;
+        height: 360px;
+    }
+}
+
+/* Rotating 16-Zone Vastu Chakra */
+.vv-rotating-chakra {
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    animation: spinVastuChakra 35s linear infinite;
+    filter: drop-shadow(0 0 20px rgba(200, 150, 44, 0.4));
+    opacity: 0.95;
+}
+
+@keyframes spinVastuChakra {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .vv-rotating-chakra {
+        width: 350px;
         height: 350px;
     }
 }
 
-.vv-portrait-royal-shield img {
+/* Arched Portrait in front of the Chakra */
+.vv-hero-portrait-arch {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 190px 190px 30px 30px;
+    overflow: hidden;
+    border: 4.5px solid var(--vv-gold);
+    box-shadow: 0 18px 45px rgba(84, 12, 22, 0.3);
+    background: linear-gradient(180deg, #fff7ea 0%, #ecd4b5 100%);
+    z-index: 2;
+}
+
+.vv-hero-portrait-arch img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -248,67 +314,29 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-/* Floating Award Badge attached to hero photo */
-.vv-hero-floating-badge {
+.vv-arch-badge {
     position: absolute;
-    bottom: -15px;
+    bottom: -14px;
     left: 50%;
     transform: translateX(-50%);
     background: var(--vv-maroon-deep);
     border: 2px solid var(--vv-gold);
     color: #ffffff;
-    padding: 8px 22px;
+    padding: 7px 22px;
     border-radius: 30px;
     font-size: 13px;
     font-weight: 700;
     white-space: nowrap;
     z-index: 3;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
-/* Floating ISO Trust Card on top corner */
-.vv-hero-float-iso {
-    position: absolute;
-    top: 10px;
-    left: -15px;
-    background: #ffffff;
-    border: 1px solid var(--vv-gold);
-    border-radius: 12px;
-    padding: 8px 14px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    z-index: 4;
-}
-
-.vv-hero-float-iso i {
-    color: var(--vv-gold);
-    font-size: 20px;
-}
-
-.vv-hero-float-iso span {
-    font-size: 11px;
-    font-weight: 800;
-    color: var(--vv-maroon);
-    line-height: 1.2;
-}
-
-@media (max-width: 768px) {
-    .vv-hero-float-iso {
-        left: 5px;
-        top: 5px;
-    }
-}
-
-/* ==========================================================================
-   Trust Strip
-   ========================================================================== */
+/* Trust Counters Strip */
 .vv-trust-strip {
     background: #ffffff;
     border-top: 1px solid var(--vv-border);
     border-bottom: 2px solid var(--vv-gold);
-    padding: 26px 0;
+    padding: 24px 0;
 }
 
 .vv-trust-grid {
@@ -330,13 +358,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--vv-border);
     border-radius: 14px;
     padding: 16px;
-    box-shadow: 0 2px 8px rgba(91, 15, 25, 0.03);
-    transition: transform 0.2s;
-}
-
-.vv-trust-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--vv-gold);
+    box-shadow: 0 2px 8px rgba(84, 12, 22, 0.03);
 }
 
 .vv-trust-card h3 {
@@ -353,9 +375,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-/* ==========================================================================
-   Section Headers (Cream & Maroon)
-   ========================================================================== */
+/* Section Header */
 .vv-section-header {
     text-align: center;
     margin-bottom: 42px;
@@ -395,12 +415,14 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--vv-gold);
 }
 
-/* ==========================================================================
-   Core Services (Maroon & Cream Cards)
-   ========================================================================== */
+/* Services Section with Mountain Silhouette Background */
 .vv-services-section {
     padding: 70px 0;
-    background: var(--vv-cream-bg);
+    background-color: #fbf7ee;
+    background-image: linear-gradient(rgba(251, 247, 238, 0.92), rgba(251, 247, 238, 0.94)), url('../img/backgroundbanner2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .vv-services-grid {
@@ -420,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
     border: 1px solid var(--vv-border);
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(91, 15, 25, 0.05);
+    box-shadow: 0 6px 20px rgba(84, 12, 22, 0.06);
     display: flex;
     flex-direction: column;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -428,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 14px 30px rgba(91, 15, 25, 0.12);
+    box-shadow: 0 14px 30px rgba(84, 12, 22, 0.12);
     border-color: var(--vv-gold);
 }
 
@@ -436,13 +458,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 24px 20px;
     color: #ffffff;
     background: linear-gradient(135deg, var(--vv-maroon) 0%, var(--vv-maroon-deep) 100%);
-    position: relative;
     border-bottom: 3px solid var(--vv-gold);
 }
 
 .vv-service-tag {
     display: inline-block;
-    background: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.2);
     border: 1px solid rgba(255,255,255,0.3);
     padding: 3px 12px;
     border-radius: 20px;
@@ -461,7 +482,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-service-card-header p {
     font-size: 13px;
-    color: #fce8cc;
+    color: #faebd7;
     margin: 4px 0 0;
 }
 
@@ -504,9 +525,7 @@ h1, h2, h3, h4, h5, h6 {
     border-top: 1px solid var(--vv-border);
 }
 
-/* ==========================================================================
-   Why Choose Us
-   ========================================================================== */
+/* Why Choose Us */
 .vv-why-section {
     padding: 70px 0;
     background: #ffffff;
@@ -537,12 +556,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 24px 18px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-    transition: transform 0.2s;
-}
-
-.vv-why-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--vv-gold);
 }
 
 .vv-why-icon {
@@ -572,9 +585,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* ==========================================================================
-   Products Section
-   ========================================================================== */
+/* Products Section */
 .vv-products-section {
     padding: 70px 0;
     background: var(--vv-cream-bg);
@@ -603,21 +614,14 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 18px;
     border: 1px solid var(--vv-border);
     padding: 20px;
-    box-shadow: 0 4px 14px rgba(91, 15, 25, 0.04);
+    box-shadow: 0 4px 14px rgba(84, 12, 22, 0.04);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.vv-product-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--vv-gold);
-    box-shadow: 0 8px 24px rgba(91, 15, 25, 0.1);
 }
 
 .vv-product-img-wrap {
-    height: 190px;
+    height: 185px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -665,9 +669,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--vv-maroon);
 }
 
-/* ==========================================================================
-   Footer (Rich Deep Maroon & Cream)
-   ========================================================================== */
+/* Footer */
 .vv-footer {
     background: var(--vv-maroon-deep);
     color: #f7ede0;
@@ -710,7 +712,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 14px;
-    border-bottom: 1px solid rgba(200, 150, 44, 0.35);
+    border-bottom: 1px solid rgba(197, 147, 40, 0.35);
     padding-bottom: 8px;
 }
 
