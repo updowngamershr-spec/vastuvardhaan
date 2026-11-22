@@ -23,12 +23,12 @@
                             </tr>
                         </thead>
                         <tbody id="syCartItems">
-                            <tr class="sy-cart__row" data-price="499">
+                            <tr class="sy-cart__row" data-price="1199">
                                 <td data-label="Product">
                                     <div class="sy-cart__product">
-                                        <img class="sy-cart__thumb" src="./img/host.png" alt="9 Planets Yantra">
+                                        <img class="sy-cart__thumb" src="./img/product-pyrite.jpg" alt="????? ??????? ??? ????????">
                                         <div>
-                                            <p class="sy-cart__name">9 Planets Yantra</p>
+                                            <p class="sy-cart__name">????? ??????? ??? ????????</p>
                                             <p class="sy-cart__variant">Premium Edition</p>
                                             <p class="sy-cart__sku">SKU: SS-NGY-009</p>
                                             <span class="sy-cart__badge">✓ Energized &amp; Crafted for Maximum
@@ -73,12 +73,12 @@
                             </tr>
                         </thead>
                         <tbody id="syCartItems">
-                            <tr class="sy-cart__row" data-price="499">
+                            <tr class="sy-cart__row" data-price="1199">
                                 <td>
                                     <div class="sy-cart__product">
-                                        <img class="sy-cart__thumb" src="./img/host.png" alt="9 Planets Yantra">
+                                        <img class="sy-cart__thumb" src="./img/product-pyrite.jpg" alt="????? ??????? ??? ????????">
                                         <div>
-                                            <p class="sy-cart__name">9 Planets Yantra</p>
+                                            <p class="sy-cart__name">????? ??????? ??? ????????</p>
                                             <p class="sy-cart__variant">Premium Edition</p>
                                             <p class="sy-cart__sku">SKU: SS-NGY-009</p>
                                             <span class="sy-cart__badge">✓ Energized &amp; Crafted for Maximum
@@ -119,7 +119,7 @@
                 <div class="summury-box">
                     <div class="sy-cart__summary-row">
                         <span>Subtotal</span>
-                        <span data-role="subtotal"><strong>Rs. 499.00</strong></span>
+                        <span data-role="subtotal"><strong>Rs. 1199.00</strong></span>
                     </div>
                     <div class="sy-cart__summary-row sy-cart__summary-row--free">
                         <span>Shipping</span>
@@ -134,7 +134,7 @@
 
                     <div class="sy-cart__summary-total">
                         <span>Total</span>
-                        <span class="sy-cart__summary-total-value" data-role="grand-total">Rs. 499.00</span>
+                        <span class="sy-cart__summary-total-value" data-role="grand-total">Rs. 1199.00</span>
                     </div>
 
                     <button type="button" class="sy-cart__checkout-btn">Proceed to Checkout</button>
@@ -183,8 +183,8 @@
                     <div>
                         <p class="sy-cart__also-name">Shree Yantra Energized Pyramid</p>
                         <div class="sy-cart__also-row">
-                            <span class="sy-cart__also-price">Rs. 499.00</span>
-                            <button type="button" class="sy-cart__also-add" data-price="499">+</button>
+                            <span class="sy-cart__also-price">Rs. 1199.00</span>
+                            <button type="button" class="sy-cart__also-add" data-price="1199">+</button>
                         </div>
                     </div>
                 </div>

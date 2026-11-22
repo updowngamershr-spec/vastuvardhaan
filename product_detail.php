@@ -1,52 +1,52 @@
 <?php
 $products = [
     1 => [
-        'name' => 'सिद्ध श्रीयंत्र (Brass Energized Shree Yantra Frame)',
-        'category' => 'सिद्ध यंत्र',
-        'price' => '2,100',
-        'image' => 'img/yantra.png',
-        'desc' => 'श्रीयंत्र हे विश्वातील सर्वोच्च सकारात्मक ऊर्जेचे प्रतीक मानले जाते. योग्य वैदिक मुहूर्तावर मंत्रोच्चाराने सिद्ध केलेले हे श्रीयंत्र घराच्या ईशान्य किंवा उत्तर दिशेला स्थापन केल्याने आर्थिक स्थैर्य, कर्जमुक्ती आणि घरात सुख-शांती कायम राहते.',
-        'sku' => 'VV-SY-001'
+        'name' => 'नॅचरल पायराइट मनी ब्रेसलेट (Raw Pyrite Bracelet)',
+        'category' => 'क्रिस्टल ब्रेसलेट',
+        'price' => '1,199',
+        'image' => './img/product-pyrite.jpg',
+        'desc' => 'सोन्यासारखा चमकणारा अस्सल पायराइट स्टोन हा धनाचे चुंबक (Money Magnet) मानला जातो. व्यवसायात नवीन ग्राहक मिळवण्यासाठी, अडकलेले पैसे मोकळे करण्यासाठी आणि आत्मविश्वास वाढवण्यासाठी हे ब्रेसलेट अत्यंत प्रभावशाली आहे.',
+        'sku' => 'VV-BR-001'
     ],
     2 => [
-        'name' => 'श्री कुबेर धन यंत्र प्लेट (Energized Kuber Plate)',
-        'category' => 'सिद्ध यंत्र',
-        'price' => '1,250',
-        'image' => 'img/rotating-yantra.png',
-        'desc' => 'भगवान कुबेरांचे हे प्रभावी यंत्र व्यावसायिक आस्थापने, दुकान किंवा घरातील तिजोरीमध्ये ठेवल्यास धनाची आवक सुधारते व अकारण होणारे नुकसान थांबते.',
-        'sku' => 'VV-KY-002'
+        'name' => 'सिट्रीन धनलक्ष्मी क्रिस्टल ब्रेसलेट (Natural Citrine)',
+        'category' => 'क्रिस्टल ब्रेसलेट',
+        'price' => '850',
+        'image' => './img/product-citrine.jpg',
+        'desc' => 'सिट्रीन स्टोनला व्यापाऱ्यांचा लकी स्टोन (Merchant Stone) म्हटले जाते. हे ब्रेसलेट घातल्याने पैशांची अनावश्यक गळती थांबते, निर्णयक्षमता सुधारते आणि कार्यक्षेत्रात नवीन यश मिळते.',
+        'sku' => 'VV-BR-002'
     ],
     3 => [
-        'name' => 'ब्रास वास्तू पिरॅमिड (9x9 Energy Pyramid)',
-        'category' => 'वास्तू पिरॅमिड्स',
-        'price' => '1,499',
-        'image' => 'img/product.png',
-        'desc' => 'वास्तूतील कट कॉर्नर, दक्षिण किंवा नैऋत्य दरवाजा, अथवा चुकीच्या जागेवरील टॉयलेटचा दोष निष्प्रभ करण्यासाठी विना तोडफोड वापरला जाणारा सर्वोत्तम ऊर्जा पिरॅमिड.',
-        'sku' => 'VV-VP-003'
+        'name' => 'टायगर आय पॉवर ब्रेसलेट (Tiger Eye Protection)',
+        'category' => 'क्रिस्टल ब्रेसलेट',
+        'price' => '799',
+        'image' => './img/product-tigereye.jpg',
+        'desc' => 'टायगर आय हा साहस, धैर्य आणि नजर सुरक्षा देणारा स्टोन आहे. मनातील भीती, नैराश्य दूर करून कामामध्ये लक्ष केंद्रित करण्यासाठी हे ब्रेसलेट परिधान केले जाते.',
+        'sku' => 'VV-BR-003'
     ],
     4 => [
-        'name' => 'पंचतत्व कॉपर व ब्रास पट्ट्या (Vastu Energy Strips)',
-        'category' => 'वास्तू पिरॅमिड्स',
-        'price' => '1,750',
-        'image' => 'img/product3.png',
-        'desc' => 'फरशी न तोडता चुकीच्या दिशेचा टॉयलेट किंवा मुख्य दरवाजा ब्लॉक करण्यासाठी जमिनीवर किंवा उंबरठ्यावर वापरल्या जाणाऱ्या सिद्ध पंचतत्व पट्ट्या.',
-        'sku' => 'VV-ST-004'
+        'name' => 'ब्लॅक टूर्मलाइन नजर सुरक्षा ब्रेसलेट (Black Tourmaline)',
+        'category' => 'क्रिस्टल ब्रेसलेट',
+        'price' => '699',
+        'image' => './img/product-tourmaline.jpg',
+        'desc' => 'वाईट नजर, मत्सर आणि बाहेरील नकारात्मक ऊर्जेपासून १००% संरक्षण देणारे सिद्ध ब्लॅक टूर्मलाइन ब्रेसलेट. घरात किंवा प्रवासात नकारात्मकतेचा प्रभाव रोखण्यासाठी सर्वोत्तम.',
+        'sku' => 'VV-BR-004'
     ],
     5 => [
-        'name' => 'ओरिजिनल रॉ पायराइट क्लस्टर (Golden Money Magnet)',
-        'category' => 'पायराइट व क्रिस्टल्स',
-        'price' => '1,199',
-        'image' => 'img/product2.png',
-        'desc' => 'सोन्यासारखा लखलखणारा हा नैसर्गिक मिनरल स्टोन पैशांची नवीन संधी, व्यवसायात वाढ आणि आत्मविश्वास खेचून आणण्यासाठी अत्यंत प्रभावी मानला जातो.',
-        'sku' => 'VV-PY-005'
+        'name' => 'ब्रास वास्तू ऊर्जा पिरॅमिड ९x९ (Brass Vastu Pyramid)',
+        'category' => 'वास्तू पिरॅमिड',
+        'price' => '1,499',
+        'image' => './img/product-pyramid.jpg',
+        'desc' => 'घरातील किंवा दुकानातील दिशा दोष, कट कॉर्नर आणि मुख्य दरवाजा दोषावर एकही भिंत न पाडता विना तोडफोड ऊर्जा समतोल साधणारा बहुस्तरीय ब्रास पिरॅमिड.',
+        'sku' => 'VV-VP-005'
     ],
     6 => [
-        'name' => 'सिट्रीन धनलक्ष्मी ब्रेसलेट (Natural Citrine Crystal)',
-        'category' => 'पायराइट व क्रिस्टल्स',
-        'price' => '850',
-        'image' => 'img/product.png',
-        'desc' => 'नॅचरल सिट्रीन मण्यांनी बनवलेले हे ब्रेसलेट हातामध्ये परिधान केल्याने निर्णयक्षमता सुधारते आणि व्यवसायात सतत प्रगती होते.',
-        'sku' => 'VV-CT-006'
+        'name' => 'पर्सनलाइझ्ड न्यूमरोलॉजी किट (Name Correction Kit)',
+        'category' => 'न्यूमरोलॉजी',
+        'price' => '999',
+        'image' => './img/product-numerology.jpg',
+        'desc' => 'तुमच्या जन्मतारखेनुसार सविस्तर अंकशास्त्र अहवाल, नेम स्पेलिंग दुरुस्ती, लकी मोबाईल नंबर, लकी रंग आणि भाग्योदय घडवणारी सही (Signature) नमुना गाइड.',
+        'sku' => 'VV-NK-006'
     ],
 ];
 
@@ -55,68 +55,71 @@ $item = $products[$id];
 include 'inc/header.php';
 ?>
 
-<div class="inner_banner py-12 bg-gradient-to-r from-amber-700 to-amber-900 text-white text-center">
-    <h1 class="text-2xl md:text-4xl font-bold"><?php echo htmlspecialchars($item['name']); ?></h1>
-    <p class="text-amber-200 text-xs md:text-sm mt-1">वास्तुवर्धन प्रमाणित सिद्ध वास्तू उत्पादने</p>
+<div class="inner_banner" style="padding:40px 0; background:linear-gradient(135deg, #8c6508 0%, #5c4103 100%); text-align:center; color:#fff;">
+    <h1 style="font-size:28px; font-weight:800; margin:0 0 6px;"><?php echo htmlspecialchars($item['name']); ?></h1>
+    <p style="font-size:14px; color:#f3dfbe; margin:0;">वास्तुवर्धन प्रमाणित सिद्ध वास्तू उत्पादन</p>
 </div>
 
-<section class="product_detail py-16">
-  <div class="container m-auto px-4 flex flex-col md:flex-row gap-12 items-start">
-    <!-- Gallery -->
-    <div class="gallery w-full md:w-1/2 flex flex-col items-center">
-      <div class="gallery__stage bg-white p-6 rounded-2xl shadow-lg border border-amber-100 max-w-md w-full text-center">
-        <img id="stageImg" src="<?php echo htmlspecialchars($item['image']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" class="max-h-80 mx-auto object-contain">
-      </div>
+<section style="padding:60px 0; background:#fbf7ee;">
+    <div class="container m-auto px-4" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:start;">
+        <!-- Product Image Stage -->
+        <div style="background:#ffffff; border-radius:20px; padding:30px; border:1px solid #ebd7b5; box-shadow:0 8px 24px rgba(0,0,0,0.06); text-align:center;">
+            <img id="stageImg" src="<?php echo htmlspecialchars($item['image']); ?>" alt="<?php echo htmlspecialchars($item['name']); ?>" style="max-height:300px; width:auto; max-width:100%; object-fit:contain; margin:0 auto;" onerror="this.src='./img/product2.png'">
+            <div style="margin-top:16px; font-size:12px; color:#8c6508; font-weight:700;">
+                ✨ १००% ओरिजिनल व मंत्रोच्चाराने सिद्ध केलेले
+            </div>
+        </div>
+
+        <!-- Product Info Card -->
+        <div style="background:#ffffff; border-radius:20px; padding:36px; border:1px solid #ebd7b5; box-shadow:0 8px 24px rgba(0,0,0,0.06);">
+            <span style="display:inline-block; background:#faebd7; color:#8c6508; font-size:12px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px;">
+                <?php echo htmlspecialchars($item['category']); ?>
+            </span>
+            <h1 style="font-size:26px; font-weight:800; color:#1a202c; margin:0 0 12px; line-height:1.3;">
+                <?php echo htmlspecialchars($item['name']); ?>
+            </h1>
+
+            <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:14px;">
+                <span style="font-size:32px; font-weight:800; color:#aa770d;">₹<?php echo htmlspecialchars($item['price']); ?></span>
+                <span style="font-size:13px; color:#888;">(सर्व कर व विधी समाविष्ट)</span>
+            </div>
+            <p style="font-size:12px; color:#666; margin-bottom:20px;">SKU: <strong><?php echo htmlspecialchars($item['sku']); ?></strong></p>
+
+            <div style="background:#fdf6ec; border:1px solid #f2dfc2; border-radius:10px; padding:12px 16px; font-size:13px; color:#8c6508; font-weight:600; margin-bottom:24px; display:flex; align-items:center; gap:8px;">
+                <span style="width:8px; height:8px; border-radius:50%; background:#10b981;"></span>
+                स्टॉकमध्ये उपलब्ध · संपूर्ण भारतात सुरक्षित कुरिअर डिलिव्हरी
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:10px; font-size:13px; color:#4a5568; margin-bottom:28px;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <i class="ti ti-truck" style="color:#aa770d; font-size:16px;"></i> सुरक्षित व फास्ट पॅकिंगसह घरपोच डिलिव्हरी
+                </div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <i class="ti ti-shield-check" style="color:#aa770d; font-size:16px;"></i> ओरिजिनल व शास्त्रोक्त शुद्धीकरणाची १००% हमी
+                </div>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <i class="ti ti-sparkles" style="color:#aa770d; font-size:16px;"></i> परिधान करण्याची योग्य पद्धत व मुहूर्ताची माहिती सोबत
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="display:flex; flex-wrap:wrap; gap:14px; margin-bottom:30px;">
+                <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20<?php echo urlencode($item['name']); ?>" target="_blank" class="vv-btn-primary" style="flex:1; text-align:center; display:flex; align-items:center; justify-content:center; gap:8px; padding:14px;">
+                    <i class="ti ti-brand-whatsapp text-xl"></i> WhatsApp वर थेट ऑर्डर करा
+                </a>
+                <a href="cart.php?add=<?php echo $id; ?>" class="vv-btn-secondary" style="flex:1; text-align:center; padding:14px;">
+                    Add to Cart · ₹<?php echo htmlspecialchars($item['price']); ?>
+                </a>
+            </div>
+
+            <h3 style="font-size:17px; font-weight:700; color:#1a202c; margin-bottom:8px; border-bottom:1px solid #eee; padding-bottom:6px;">
+                उत्पादनाची माहिती (Product Details)
+            </h3>
+            <p style="font-size:14px; line-height:1.7; color:#555; margin:0;">
+                <?php echo htmlspecialchars($item['desc']); ?>
+            </p>
+        </div>
     </div>
-
-    <!-- Info -->
-    <div class="info w-full md:w-1/2 bg-white p-8 rounded-2xl shadow-lg border border-amber-100">
-      <p class="info__eyebrow text-xs font-bold text-amber-700 uppercase tracking-widest mb-1">
-        <?php echo htmlspecialchars($item['category']); ?>
-      </p>
-      <h1 class="info__title text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-        <?php echo htmlspecialchars($item['name']); ?>
-      </h1>
-
-      <div class="info__price-row flex items-baseline gap-3 mb-2">
-        <span class="info__price text-3xl font-bold text-amber-700">₹<?php echo htmlspecialchars($item['price']); ?></span>
-        <span class="info__price-note text-xs text-gray-500">(सर्व कर व ऊर्जा सिद्धी समाविष्ट)</span>
-      </div>
-      <p class="info__sku text-xs text-gray-500 mb-4">SKU: <strong><?php echo htmlspecialchars($item['sku']); ?></strong></p>
-
-      <div class="urgency bg-amber-50 p-3 rounded-lg text-xs text-amber-900 font-semibold mb-6 flex items-center gap-2">
-        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-        स्टॉकमध्ये उपलब्ध · मंत्रोच्चाराने सिद्ध केलेले ओरिजिनल प्रॉडक्ट
-      </div>
-
-      <div class="perks space-y-2 text-xs text-gray-700 mb-6">
-        <div class="perks__item flex items-center gap-2">
-          <i class="ti ti-truck text-amber-600 text-base"></i>
-          महाराष्ट्र व संपूर्ण भारतात सुरक्षित व जलद कुरिअर डिलिव्हरी
-        </div>
-        <div class="perks__item flex items-center gap-2">
-          <i class="ti ti-shield-check text-amber-600 text-base"></i>
-          १००% अस्सल व सिद्ध असल्याबाबत वास्तुवर्धनची हमी
-        </div>
-        <div class="perks__item flex items-center gap-2">
-          <i class="ti ti-map-pin text-amber-600 text-base"></i>
-          योग्य दिशा व स्थापना विधी संदर्भात मोफत मार्गदर्शन पत्रक सोबत
-        </div>
-      </div>
-
-      <div class="cta-row flex flex-wrap gap-4 mb-8">
-        <a href="cart.php?add=<?php echo $id; ?>" class="big_btn flex-1 text-center">Add to Cart · ₹<?php echo htmlspecialchars($item['price']); ?></a>
-        <a href="https://wa.me/919876543210?text=I%20want%20to%20order%20<?php echo urlencode($item['name']); ?>" target="_blank" class="hero-secondary-btn flex-1 text-center flex items-center justify-center gap-2">
-            <i class="ti ti-brand-whatsapp text-lg"></i> WhatsApp वर ऑर्डर करा
-        </a>
-      </div>
-
-      <h2 class="desc__title text-lg font-bold text-gray-900 mb-2 border-b pb-2">सविस्तर वर्णन (Description)</h2>
-      <div class="desc__body text-sm text-gray-600 leading-relaxed">
-        <p><?php echo htmlspecialchars($item['desc']); ?></p>
-      </div>
-    </div>
-  </div>
 </section>
 
 <?php include 'inc/footer.php'; ?>

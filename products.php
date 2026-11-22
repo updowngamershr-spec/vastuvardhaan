@@ -1,253 +1,187 @@
 <?php include 'inc/header.php'; ?>
 
-<div class="inner_banner py-16 bg-gradient-to-r from-amber-700 to-amber-900 text-white text-center">
-    <h1 class="text-3xl md:text-5xl font-bold mb-2">वास्तू प्रॉडक्ट्स (Vastu Store)</h1>
-    <p class="text-amber-200 text-sm md:text-base max-w-xl mx-auto">
-        दोष निवारण, आर्थिक उन्नती आणि घराच्या ऊर्जेचे संतुलन करण्यासाठी सिद्ध व अभिमंत्रित वास्तू उत्पादने.
+<div class="inner_banner" style="padding:50px 0; background:linear-gradient(135deg, #8c6508 0%, #5c4103 100%); text-align:center; color:#fff;">
+    <h1 style="font-size:36px; font-weight:800; margin:0 0 8px;">वास्तू उत्पादने व ब्रेसलेट्स (Vastu Store)</h1>
+    <p style="font-size:15px; color:#f3dfbe; margin:0; max-width:600px; margin:0 auto;">
+        अस्सल नैसर्गिक क्रिस्टल ब्रेसलेट्स, विना तोडफोड वास्तू पिरॅमिड्स आणि शास्त्रोक्त न्यूमरोलॉजी किट्स.
     </p>
 </div>
 
-<section class="shop-section py-16">
-    <div class="container m-auto flex flex-col md:flex-row items-start justify-between px-4 gap-8">
-        <!-- Sidebar Categories -->
-        <aside class="sidebar w-full md:w-1/4 bg-white p-5 rounded-2xl shadow border border-amber-100">
-            <h3 class="font-bold text-lg text-gray-800 mb-4 pb-2 border-b border-gray-100 flex items-center gap-2">
-                <i class="ti ti-category text-amber-600"></i> कॅटेगरी निवडा
-            </h3>
-            <ul class="category-list space-y-2">
-                <li class="active cursor-pointer p-3 rounded-lg flex items-center justify-between transition-all" data-category="all">
-                    <h4 class="font-medium text-sm m-0">सर्व प्रॉडक्ट्स (All Products)</h4>
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">10</span>
-                </li>
-                <li class="cursor-pointer p-3 rounded-lg flex items-center justify-between transition-all" data-category="yantra">
-                    <h4 class="font-medium text-sm m-0">सिद्ध यंत्र (Energized Yantras)</h4>
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">2</span>
-                </li>
-                <li class="cursor-pointer p-3 rounded-lg flex items-center justify-between transition-all" data-category="pyramid">
-                    <h4 class="font-medium text-sm m-0">वास्तू पिरॅमिड्स व पट्ट्या</h4>
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">2</span>
-                </li>
-                <li class="cursor-pointer p-3 rounded-lg flex items-center justify-between transition-all" data-category="crystals">
-                    <h4 class="font-medium text-sm m-0">पायराइट व क्रिस्टल्स</h4>
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">3</span>
-                </li>
-                <li class="cursor-pointer p-3 rounded-lg flex items-center justify-between transition-all" data-category="rudraksha">
-                    <h4 class="font-medium text-sm m-0">रुद्राक्ष व जपमाळा</h4>
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">1</span>
-                </li>
-                <li class="cursor-pointer p-3 rounded-lg flex items-center justify-between transition-all" data-category="protection">
-                    <h4 class="font-medium text-sm m-0">नजर सुरक्षा व शुद्धी किट</h4>
-                    <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">2</span>
-                </li>
-            </ul>
+<section style="padding:60px 0; background:#fbf7ee;">
+    <div class="container m-auto px-4">
+        
+        <!-- Category Filter Pills -->
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:40px;">
+            <button class="vv-filter-btn active" onclick="filterVProducts('all', this)" style="padding:10px 22px; border-radius:30px; border:1px solid #c99320; background:#aa770d; color:#fff; font-weight:700; cursor:pointer; font-size:14px;">
+                सर्व उत्पादने (All)
+            </button>
+            <button class="vv-filter-btn" onclick="filterVProducts('bracelets', this)" style="padding:10px 22px; border-radius:30px; border:1px solid #c99320; background:#fff; color:#6b4d04; font-weight:700; cursor:pointer; font-size:14px;">
+                क्रिस्टल ब्रेसलेट्स (Bracelets)
+            </button>
+            <button class="vv-filter-btn" onclick="filterVProducts('pyramid', this)" style="padding:10px 22px; border-radius:30px; border:1px solid #c99320; background:#fff; color:#6b4d04; font-weight:700; cursor:pointer; font-size:14px;">
+                वास्तू पिरॅमिड्स व पट्ट्या
+            </button>
+            <button class="vv-filter-btn" onclick="filterVProducts('numerology', this)" style="padding:10px 22px; border-radius:30px; border:1px solid #c99320; background:#fff; color:#6b4d04; font-weight:700; cursor:pointer; font-size:14px;">
+                न्यूमरोलॉजी किट्स
+            </button>
+            <button class="vv-filter-btn" onclick="filterVProducts('cleansing', this)" style="padding:10px 22px; border-radius:30px; border:1px solid #c99320; background:#fff; color:#6b4d04; font-weight:700; cursor:pointer; font-size:14px;">
+                ऑरा व घर शुद्धी किट
+            </button>
+        </div>
 
-            <div class="mt-8 p-4 bg-amber-50 rounded-xl border border-amber-200">
-                <h4 class="font-bold text-sm text-amber-900 mb-1 flex items-center gap-1">
-                    <i class="ti ti-certificate"></i> १००% सिद्ध खात्री
-                </h4>
-                <p class="text-xs text-gray-600 leading-relaxed">
-                    सर्व प्रॉडक्ट्स योग्य मुहूर्तावर मंत्रोच्चाराने अभिमंत्रित करूनच पाठवले जातात.
-                </p>
-            </div>
-        </aside>
+        <!-- Products Grid -->
+        <div class="vv-products-grid" id="productGrid">
 
-        <!-- Main Product Grid -->
-        <div class="main-content w-full md:w-3/4">
-            <div class="top-content flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
-                <div class="section-title">
-                    <span class="mini-title">✨ सिद्ध साधना व उपाय</span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800">सर्व प्रॉडक्ट्स (All Products)</h2>
+            <!-- Product 1: Pyrite -->
+            <div class="vv-product-card" data-cat="bracelets">
+                <div>
+                    <span class="vv-product-badge">Money Magnet</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-pyrite.jpg" alt="पायराइट मनी ब्रेसलेट" style="max-height:160px; object-fit:contain;" onerror="this.src='./img/product2.png'">
+                    </div>
+                    <h3>नॅचरल पायराइट मनी ब्रेसलेट</h3>
+                    <p>सोन्यासारखा चमकणारा अस्सल पायराइट स्टोन. व्यवसायात नवीन ग्राहक, धनप्राप्ती आणि आर्थिक स्थैर्य आकर्षित करतो.</p>
                 </div>
-                <div class="item-count">
-                    <h2 class="small-btn">10 Items</h2>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹1,199</span>
+                    <a href="product_detail.php?id=1" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
-            <div class="product-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                <!-- Product 1 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="yantra">
-                    <div>
-                        <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">अभिमंत्रित</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/yantra.png" alt="सिद्ध श्रीयंत्र" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">सिद्ध श्रीयंत्र (Brass Frame)</h3>
-                            <p class="text-xs text-gray-500 mb-3">घरातील धन-समृद्धी, लक्ष्मी आकर्षण आणि सकारात्मक ऊर्जेच्या निरंतर प्रवाहासाठी सर्वोत्तम.</p>
-                        </div>
+            <!-- Product 2: Citrine -->
+            <div class="vv-product-card" data-cat="bracelets">
+                <div>
+                    <span class="vv-product-badge">धनलक्ष्मी स्टोन</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-citrine.jpg" alt="सिट्रीन धनलक्ष्मी ब्रेसलेट" style="max-height:160px; object-fit:contain;" onerror="this.src='./img/product.png'">
                     </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹2,100</span>
-                        <a href="product_detail.php?id=1" class="small-btn">ऑर्डर करा</a>
-                    </div>
+                    <h3>सिट्रीन धनलक्ष्मी क्रिस्टल ब्रेसलेट</h3>
+                    <p>व्यापारी व नोकरदारांसाठी अत्यंत भाग्यशाली स्टोन. निर्णयक्षमता वाढवून पैशांची बचत आणि आवक सुधारतो.</p>
                 </div>
-
-                <!-- Product 2 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="yantra">
-                    <div>
-                        <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">धनप्राप्ती</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/rotating-yantra.png" alt="श्री कुबेर यंत्र प्लेट" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">श्री कुबेर धन यंत्र प्लेट</h3>
-                            <p class="text-xs text-gray-500 mb-3">दुकान, गल्ला किंवा तिजोरीमध्ये ठेवण्यासाठी अत्यंत शुभ व व्यापार वृद्धीकारक.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹1,250</span>
-                        <a href="product_detail.php?id=2" class="small-btn">ऑर्डर करा</a>
-                    </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹850</span>
+                    <a href="product_detail.php?id=2" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
-
-                <!-- Product 3 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="pyramid">
-                    <div>
-                        <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">वास्तू दोष निवारक</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product.png" alt="ब्रास वास्तू पिरॅमिड 9x9" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">ब्रास वास्तू पिरॅमिड (9x9)</h3>
-                            <p class="text-xs text-gray-500 mb-3">दिशा दोष, कट कॉर्नर किंवा वास्तूतील अयोग्य बांधकामाचा प्रभाव निष्प्रभ करण्यासाठी.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹1,499</span>
-                        <a href="product_detail.php?id=3" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="pyramid">
-                    <div>
-                        <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">पंचतत्व बॅलन्स</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product3.png" alt="पंचतत्व कॉपर व ब्रास पट्ट्या" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">पंचतत्व ब्रास व कॉपर पट्ट्या</h3>
-                            <p class="text-xs text-gray-500 mb-3">टॉयलेट किंवा मुख्य दरवाजा दोषावर फरशी न फोडता फ्लोअरिंग ब्लॉक करण्यासाठी विशेष पट्ट्या.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹1,750</span>
-                        <a href="product_detail.php?id=4" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 5 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="crystals">
-                    <div>
-                        <span class="badge bg-purple-600 text-white text-xs px-2 py-1 rounded">Money Magnet</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product2.png" alt="ओरिजिनल पायराइट स्टोन" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">ओरिजिनल रॉ पायराइट क्लस्टर</h3>
-                            <p class="text-xs text-gray-500 mb-3">सोन्यासारखा चमकणारा नैसर्गिक दगड जो व्यवसायात नवीन ग्राहक व संधी खेचून आणतो.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹1,199</span>
-                        <a href="product_detail.php?id=5" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 6 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="crystals">
-                    <div>
-                        <span class="badge bg-purple-600 text-white text-xs px-2 py-1 rounded">धनवृद्धी</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product.png" alt="सिट्रीन धनलक्ष्मी ब्रेसलेट" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">सिट्रीन धनलक्ष्मी ब्रेसलेट</h3>
-                            <p class="text-xs text-gray-500 mb-3">हातामध्ये परिधान केल्याने आत्मविश्वास, निर्णयक्षमता आणि पैशांची आवक सुधारते.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹850</span>
-                        <a href="product_detail.php?id=6" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 7 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="crystals">
-                    <div>
-                        <span class="badge bg-purple-600 text-white text-xs px-2 py-1 rounded">ऊर्जा शुद्धीकरण</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product2.png" alt="सेलेनाइट ऑरा क्लिनर स्टिक" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">सेलेनाइट ऑरा क्लिनर स्टिक</h3>
-                            <p class="text-xs text-gray-500 mb-3">घरातील आणि शरीराची नकारात्मक ऊर्जा काढून टाकण्यासाठी दिव्य पांढरा क्रिस्टल.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹650</span>
-                        <a href="product_detail.php?id=7" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 8 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="rudraksha">
-                    <div>
-                        <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">शिव कृपा</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product3.png" alt="सिद्ध पंचमुखी रुद्राक्ष माळा" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">सिद्ध पंचमुखी रुद्राक्ष माळा (108 मणी)</h3>
-                            <p class="text-xs text-gray-500 mb-3">मंत्रजप आणि दैनंदिन धारणेसाठी सर्वोत्तम. मनाची एकाग्रता व रक्तदाब नियंत्रणासाठी पूरक.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹999</span>
-                        <a href="product_detail.php?id=8" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 9 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="protection">
-                    <div>
-                        <span class="badge bg-rose-600 text-white text-xs px-2 py-1 rounded">नजर सुरक्षा</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product.png" alt="ब्लॅक टूर्मलाइन नजर सुरक्षा ब्रेसलेट" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">ब्लॅक टूर्मलाइन नजर सुरक्षा ब्रेसलेट</h3>
-                            <p class="text-xs text-gray-500 mb-3">वाईट नजर, ईर्ष्या आणि बाहेरील नकारात्मक प्रभावांपासून संपूर्ण संरक्षण देणारे नैसर्गिक रत्न.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹699</span>
-                        <a href="product_detail.php?id=9" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
-                <!-- Product 10 -->
-                <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between" data-category="protection">
-                    <div>
-                        <span class="badge bg-rose-600 text-white text-xs px-2 py-1 rounded">वास्तू शुद्धी</span>
-                        <div class="product-image my-4 text-center">
-                            <img src="img/product2.png" alt="वास्तू ऑरा सॉल्ट व धूप शुद्धी किट" class="h-44 mx-auto object-contain">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="font-bold text-base text-gray-800 mb-1">वास्तू ऑरा सॉल्ट व धूप किट</h3>
-                            <p class="text-xs text-gray-500 mb-3">घरातील क्लेश, आजारपण व नकारात्मक ऊर्जा घालवण्यासाठी नैसर्गिक खडे मीठ व आयुर्वेदिक धूप.</p>
-                        </div>
-                    </div>
-                    <div class="pt-3 border-t border-gray-100 flex items-center justify-between">
-                        <span class="font-bold text-lg text-amber-700">₹550</span>
-                        <a href="product_detail.php?id=10" class="small-btn">ऑर्डर करा</a>
-                    </div>
-                </div>
-
             </div>
+
+            <!-- Product 3: Tiger Eye -->
+            <div class="vv-product-card" data-cat="bracelets">
+                <div>
+                    <span class="vv-product-badge">आत्मविश्वास व धाडस</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-tigereye.jpg" alt="टायगर आय ब्रेसलेट" style="max-height:160px; object-fit:contain;" onerror="this.src='./img/product3.png'">
+                    </div>
+                    <h3>टायगर आय पॉवर ब्रेसलेट</h3>
+                    <p>भीती दूर करून आत्मविश्वास निर्माण करतो, नजर दोषापासून संरक्षण देतो आणि कामावर लक्ष केंद्रित करण्यास मदत करतो.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹799</span>
+                    <a href="product_detail.php?id=3" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 4: Black Tourmaline -->
+            <div class="vv-product-card" data-cat="bracelets">
+                <div>
+                    <span class="vv-product-badge">नजर सुरक्षा</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-tourmaline.jpg" alt="ब्लॅक टूर्मलाइन ब्रेसलेट" style="max-height:160px; object-fit:contain;" onerror="this.src='./img/product2.png'">
+                    </div>
+                    <h3>ब्लॅक टूर्मलाइन नजर सुरक्षा ब्रेसलेट</h3>
+                    <p>वाईट नजर, ईर्ष्या आणि बाहेरील नकारात्मक ऊर्जेपासून अभेद्य सुरक्षा कवच प्रदान करणारे नैसर्गिक रत्न ब्रेसलेट.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹699</span>
+                    <a href="product_detail.php?id=4" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 5: Vastu Pyramid -->
+            <div class="vv-product-card" data-cat="pyramid">
+                <div>
+                    <span class="vv-product-badge">विना तोडफोड उपाय</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-pyramid.jpg" alt="ब्रास वास्तू पिरॅमिड ९x९" style="max-height:160px; object-fit:contain;" onerror="this.src='./img/product.png'">
+                    </div>
+                    <h3>ब्रास वास्तू ऊर्जा पिरॅमिड (९x९)</h3>
+                    <p>घरातील किंवा कार्यालयातील दिशा दोष, कट कॉर्नर आणि मुख्य दरवाजा दोषांवर तोडफोड न करता अत्यंत प्रभावशाली उपाय.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹1,499</span>
+                    <a href="product_detail.php?id=5" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 6: Vastu Brass & Copper Strips -->
+            <div class="vv-product-card" data-cat="pyramid">
+                <div>
+                    <span class="vv-product-badge">पंचतत्व बॅलन्स</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product3.png" alt="वास्तू कॉपर व ब्रास पट्ट्या" style="max-height:160px; object-fit:contain;">
+                    </div>
+                    <h3>पंचतत्व ब्रास व कॉपर पट्ट्या</h3>
+                    <p>टॉयलेट किंवा चुकीच्या दिशेचा दरवाजा जमिनीवर उंबरठ्यावर पट्ट्या बसवून विना तोडफोड ब्लॉक करण्यासाठी विशेष पट्ट्या.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹1,750</span>
+                    <a href="product_detail.php?id=6" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 7: Numerology Kit -->
+            <div class="vv-product-card" data-cat="numerology">
+                <div>
+                    <span class="vv-product-badge">अंकशास्त्र रिपोर्ट</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-numerology.jpg" alt="पर्सनलाइझ्ड न्यूमरोलॉजी किट" style="max-height:160px; object-fit:contain;" onerror="this.src='./img/product.png'">
+                    </div>
+                    <h3>पर्सनलाइझ्ड न्यूमरोलॉजी किट</h3>
+                    <p>तुमच्या जन्मतारखेनुसार सविस्तर अंकशास्त्र अहवाल, नेम करेक्शन स्पेलिंग, लकी नंबर आणि सही (Signature) मार्गदर्शक.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹999</span>
+                    <a href="product_detail.php?id=7" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 8: Aura Salt Cleansing Kit -->
+            <div class="vv-product-card" data-cat="cleansing">
+                <div>
+                    <span class="vv-product-badge">नकारात्मकता निवारण</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product2.png" alt="वास्तू ऑरा सॉल्ट व धूप किट" style="max-height:160px; object-fit:contain;">
+                    </div>
+                    <h3>वास्तू ऑरा सॉल्ट व पॉझिटिव्ह एनर्जी धूप</h3>
+                    <p>घरातील क्लेश, आजारपण व नकारात्मक ऊर्जा घालवण्यासाठी नैसर्गिक हिमालयीन रॉक सॉल्ट व आयुर्वेदिक धूप कापूर किट.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹550</span>
+                    <a href="product_detail.php?id=8" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
+<script>
+function filterVProducts(cat, btn) {
+    document.querySelectorAll('.vv-filter-btn').forEach(b => {
+        b.style.background = '#fff';
+        b.style.color = '#6b4d04';
+    });
+    btn.style.background = '#aa770d';
+    btn.style.color = '#fff';
+
+    const cards = document.querySelectorAll('#productGrid .vv-product-card');
+    cards.forEach(c => {
+        if (cat === 'all' || c.getAttribute('data-cat') === cat) {
+            c.style.display = 'flex';
+        } else {
+            c.style.display = 'none';
+        }
+    });
+}
+</script>
 
 <?php include 'inc/footer.php'; ?>

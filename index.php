@@ -1,41 +1,38 @@
 <?php include 'inc/header.php'; ?>
 
-<!-- Hero Banner with Rotating Yantra & Expert Reference Photo -->
-<section class="hero-banner-section">
-    <div class="container m-auto px-4 hero-banner-wrapper">
-        <!-- Left Column: Banner Text & Actions -->
-        <div class="hero-banner-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                <span>✨ शुद्ध वैदिक ज्ञान व शास्त्रीय मार्गदर्शन</span>
-            </div>
-            <h1 class="hero-title">
-                वास्तू, अंकशास्त्र आणि ज्योतिषीय उपायांनी आणा जीवनात सुख, समृद्धी आणि यश!
-            </h1>
-            <p class="hero-subtitle">
-                <strong>वास्तुवर्धन</strong> — घर किंवा व्यवसायात विना तोडफोड वास्तू दोष निवारण, शास्त्रशुद्ध न्यूमरोलॉजी (नाव व बिझनेस नेम करेक्शन) आणि अचूक जन्मकुंडली विश्लेषण.
-            </p>
-            <div class="hero-actions">
-                <a href="services.php" class="big_btn">आमच्या सेवा पहा →</a>
-                <a href="consultation.php" class="hero-secondary-btn">सल्ला बुक करा</a>
-            </div>
-            <div class="mt-6 flex items-center gap-4 text-sm text-gray-600">
-                <span class="flex items-center gap-1"><i class="ti ti-shield-check text-amber-600 text-lg"></i> 100% विना तोडफोड उपाय</span>
-                <span class="flex items-center gap-1"><i class="ti ti-award text-amber-600 text-lg"></i> राज्यस्तरीय पुरस्कार प्राप्त</span>
-            </div>
-        </div>
-
-        <!-- Right Column: Visual Area with Rotating Yantra + Reference Photo -->
-        <div class="hero-banner-visual">
-            <div class="rotating-yantra-wrap">
-                <img src="./img/rotating-yantra.png" alt="Sacred Sri Yantra" class="rotating-yantra-img">
+<!-- Hero Banner with Sacred Energy Glow & Consultant Reference Photo -->
+<section class="vv-hero-section">
+    <div class="container m-auto px-4">
+        <div class="vv-hero-grid">
+            <!-- Left Column: Banner Text & Actions -->
+            <div class="vv-hero-text">
+                <div class="vv-badge">
+                    <span class="vv-badge-dot"></span>
+                    <span>✨ शुद्ध वैदिक ज्ञान व शास्त्रीय मार्गदर्शन</span>
+                </div>
+                <h1 class="vv-hero-title">
+                    वास्तू, अंकशास्त्र आणि ज्योतिषीय उपायांनी आणा जीवनात सुख, समृद्धी आणि यश!
+                </h1>
+                <p class="vv-hero-subtitle">
+                    <strong>वास्तुवर्धन</strong> — घर किंवा व्यवसायात <strong>विना तोडफोड</strong> वास्तू दोष निवारण, शास्त्रशुद्ध न्यूमरोलॉजी (नाव व बिझनेस नेम करेक्शन) आणि अचूक जन्मकुंडली विश्लेषण.
+                </p>
+                <div class="vv-btn-row">
+                    <a href="services.php" class="vv-btn-primary">आमच्या सेवा पहा →</a>
+                    <a href="consultation.php" class="vv-btn-secondary">सल्ला बुक करा</a>
+                </div>
+                <div style="display:flex; flex-wrap:wrap; gap:18px; font-size:14px; font-weight:600; color:#555;">
+                    <span style="display:flex; align-items:center; gap:6px;"><i class="ti ti-shield-check" style="color:#aa770d; font-size:18px;"></i> १००% विना तोडफोड उपाय</span>
+                    <span style="display:flex; align-items:center; gap:6px;"><i class="ti ti-award" style="color:#aa770d; font-size:18px;"></i> राज्यस्तरीय पुरस्कार प्राप्त</span>
+                </div>
             </div>
 
-            <div class="hero-foreground-img">
-                <div class="hero-portrait-frame">
-                    <img src="./img/consultant-expert.jpg" alt="वास्तुवर्धन मुख्य सल्लागार">
-                    <div class="hero-portrait-badge">
-                        वास्तू व न्यूमरोलॉजी तज्ज्ञ
+            <!-- Right Column: Clean Sacred Glow Aura + Portrait -->
+            <div class="vv-hero-image-wrap">
+                <div class="vv-portrait-container">
+                    <div class="vv-portrait-aura"></div>
+                    <div class="vv-portrait-frame">
+                        <img src="./img/consultant-expert.jpg" alt="वास्तुवर्धन मुख्य सल्लागार">
+                        <div class="vv-portrait-tag">वास्तू व न्यूमरोलॉजी तज्ज्ञ</div>
                     </div>
                 </div>
             </div>
@@ -44,173 +41,135 @@
 </section>
 
 <!-- Trust Counters Strip -->
-<section class="py-10 bg-amber-50/60 border-y border-amber-200/60">
+<section class="vv-trust-strip">
     <div class="container m-auto px-4">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100">
-                <h3 class="text-3xl font-bold text-amber-700 m-0">10+ वर्षे</h3>
-                <p class="text-sm text-gray-600 mt-1 m-0">तपस्वी अनुभव व संशोधन</p>
+        <div class="vv-trust-grid">
+            <div class="vv-trust-card">
+                <h3>10+ वर्षे</h3>
+                <p>तपस्वी अनुभव व संशोधन</p>
             </div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100">
-                <h3 class="text-3xl font-bold text-amber-700 m-0">5,000+</h3>
-                <p class="text-sm text-gray-600 mt-1 m-0">समाधानी कुटुंबे व व्यवसाय</p>
+            <div class="vv-trust-card">
+                <h3>5,000+</h3>
+                <p>समाधानी कुटुंबे व व्यवसाय</p>
             </div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100">
-                <h3 class="text-3xl font-bold text-amber-700 m-0">100%</h3>
-                <p class="text-sm text-gray-600 mt-1 m-0">विना तोडफोड शास्त्रोक्त उपाय</p>
+            <div class="vv-trust-card">
+                <h3>100%</h3>
+                <p>विना तोडफोड शास्त्रोक्त उपाय</p>
             </div>
-            <div class="p-4 bg-white rounded-xl shadow-sm border border-amber-100">
-                <h3 class="text-3xl font-bold text-amber-700 m-0">ISO 9001</h3>
-                <p class="text-sm text-gray-600 mt-1 m-0">प्रमाणित व सन्मानित संस्था</p>
+            <div class="vv-trust-card">
+                <h3>ISO 9001</h3>
+                <p>प्रमाणित व सन्मानित संस्था</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- About Section with Award Ceremony Photo (Image 3) -->
-<section class="about-section py-20">
+<!-- About Section with Felicitation Award Photo -->
+<section style="padding:70px 0; background:#ffffff;">
     <div class="container m-auto px-4">
-        <div class="about-container">
-            <!-- LEFT SIDE: Award / Felicitation Photo -->
-            <div class="about-video relative rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-600/30">
-                <img src="./img/award-felicitation.jpg" alt="भव्य प्रमाण व सन्मान सोहळा" class="w-full h-auto object-cover">
-                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 text-white">
-                    <span class="inline-block bg-amber-600 text-white text-xs px-2 py-1 rounded font-semibold mb-1">विशेष सन्मान</span>
-                    <p class="text-sm font-medium m-0">वेदऋषी फाउंडेशन आणि ज्योतिष वास्तू विश्व संशोधन केंद्र, पुणे तर्फे भव्य सन्मान सोहळ्यात सन्मानित</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px; align-items:center;">
+            <!-- Award Photo -->
+            <div style="border-radius:20px; overflow:hidden; box-shadow:0 12px 30px rgba(0,0,0,0.12); border:4px solid #ebd7b5; position:relative;">
+                <img src="./img/award-felicitation.jpg" alt="भव्य सन्मान सोहळा" style="width:100%; height:auto; display:block; object-fit:cover;">
+                <div style="background:rgba(26,32,44,0.92); color:#fff; padding:14px; text-align:center; font-size:13px; font-weight:600;">
+                    <i class="ti ti-trophy" style="color:#d49a1d;"></i> वेदऋषी फाउंडेशन आणि ज्योतिष वास्तू विश्व संशोधन केंद्र, पुणे तर्फे सन्मानित
                 </div>
             </div>
 
-            <!-- RIGHT CONTENT -->
-            <div class="about-content">
-                <div class="section-title">
-                    <span class="mini-title">
-                        ✨ ओळख वास्तुवर्धनची
-                    </span>
-                    <h2>
-                        शास्त्रीय दृष्टिकोन, सकारात्मक ऊर्जा आणि सिद्ध उपाय
-                    </h2>
-                    <div class="divider">
-                        ☸
-                    </div>
-                </div>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    <strong>वास्तुवर्धन वास्तुशास्त्र व न्यूमरोलॉजी</strong> हे केवळ भविष्य कथन किंवा जुन्या समजुतींचे केंद्र नसून, तुमच्या घराची, कार्यालयाची आणि तुमच्या नावाची ऊर्जा समतोल करणारे आधुनिक शास्त्रशुद्ध व्यासपीठ आहे.
+            <!-- Text Content -->
+            <div>
+                <span class="vv-section-sub">✨ ओळख वास्तुवर्धनची</span>
+                <h2 style="font-size:32px; font-weight:800; color:#1a202c; margin-bottom:14px; line-height:1.25;">
+                    शास्त्रीय दृष्टिकोन, सकारात्मक ऊर्जा आणि सिद्ध उपाय
+                </h2>
+                <div style="width:50px; height:3px; background:#d49a1d; margin-bottom:20px; border-radius:2px;"></div>
+                <p style="font-size:15px; line-height:1.7; color:#4a5568; margin-bottom:14px;">
+                    <strong>वास्तुवर्धन वास्तुशास्त्र व न्यूमरोलॉजी</strong> हे केवळ भविष्य सांगण्याचे केंद्र नसून, तुमच्या राहत्या घराची, कार्यालयाची आणि तुमच्या नावाची ऊर्जा समतोल करणारे आधुनिक शास्त्रशुद्ध व्यासपीठ आहे.
                 </p>
-                <p class="text-gray-700 leading-relaxed mb-6">
-                    अनेकदा घरात किंवा व्यवसायात सतत अडचणी, आर्थिक तंगी किंवा आरोग्याच्या तक्रारी असतात. वास्तुवर्धनच्या माध्यमातून आम्ही कोणत्याही प्रकारची तोडफोड न करता (Non-Demolition Remedies), योग्य दिशानिहाय ऊर्जा संतुलन, लकी नंबर व नेम अलाइनमेंट, आणि अचूक जन्मकुंडली अभ्यासाने कायमस्वरूपी सकारात्मक बदल घडवून आणतो.
+                <p style="font-size:15px; line-height:1.7; color:#4a5568; margin-bottom:24px;">
+                    अनेकदा घरात किंवा व्यवसायात विनाकारण आर्थिक नुकसान, आरोग्य तक्रारी किंवा कलह होतात. वास्तुवर्धनच्या माध्यमातून आम्ही कोणत्याही प्रकारची भिंत किंवा बांधकाम न तोडता (Non-Demolition Remedies), योग्य दिशानिहाय ऊर्जा संतुलन, लकी नंबर व नेम अलाइनमेंट द्वारे कायमस्वरूपी यश मिळवून देतो.
                 </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="about.php" class="big_btn">
-                        आमच्याबद्दल अधिक जाणून घ्या →
-                    </a>
-                    <a href="awards.php" class="hero-secondary-btn">
-                        पुरस्कार व सन्मान पहा
-                    </a>
+                <div class="vv-btn-row">
+                    <a href="about.php" class="vv-btn-primary">आमच्याबद्दल अधिक जाणून घ्या →</a>
+                    <a href="awards.php" class="vv-btn-secondary">पुरस्कार व सन्मान पहा</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Core Services Section (Vastu, Numerology, Astrology) -->
-<section class="our_courses pt-20 pb-20 bg-slate-50" id="services">
+<!-- Core Services Section (3 Distinct Pillars) -->
+<section class="vv-services-section" id="services">
     <div class="container m-auto px-4">
-        <div class="section-title text-center mb-12">
-            <span class="mini-title">
-                ✨ आमच्या प्रमुख सेवा
-            </span>
-            <h2>
-                परिपूर्ण व खात्रीशीर कन्सल्टेशन सेवा
-            </h2>
-            <div class="divider">
-                ☸
-            </div>
-            <p class="max-w-2xl mx-auto text-gray-600 mt-2">
-                तुमच्या जीवनातील प्रत्येक पैलूला यशाच्या शिखरावर नेण्यासाठी वास्तुवर्धनच्या ३ प्रमुख खांब सेवा.
+        <div class="vv-section-header">
+            <span class="vv-section-sub">✨ आमच्या प्रमुख सेवा</span>
+            <h2 class="vv-section-title">परिपूर्ण व खात्रीशीर कन्सल्टेशन सेवा</h2>
+            <div class="vv-divider-sym">☸</div>
+            <p style="font-size:15px; color:#666; max-width:600px; margin:10px auto 0;">
+                तुमच्या जीवनातील प्रत्येक पैलूला यशाच्या शिखरावर नेण्यासाठी वास्तुवर्धनच्या ३ प्रमुख सेवा.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="vv-services-grid">
             <!-- Service 1: Vastushastra -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div class="h-48 bg-gradient-to-br from-amber-600 to-amber-800 p-6 flex flex-col justify-between text-white relative overflow-hidden">
-                    <div class="absolute -right-4 -bottom-4 opacity-20">
-                        <i class="ti ti-compass" style="font-size: 140px;"></i>
-                    </div>
-                    <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold w-max">
-                        दिशा व ऊर्जा संतुलन
-                    </span>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white mb-1">वास्तुशास्त्र सल्ला</h3>
-                        <p class="text-amber-100 text-xs">निवासी, व्यावसायिक व औद्योगिक वास्तू</p>
-                    </div>
+            <div class="vv-service-card">
+                <div class="vv-service-card-header bg-gold">
+                    <span class="vv-service-tag">दिशा व ऊर्जा संतुलन</span>
+                    <h3>वास्तुशास्त्र सल्ला</h3>
+                    <p>निवासी, व्यावसायिक व औद्योगिक वास्तू</p>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <ul class="space-y-3 text-sm text-gray-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-amber-600 font-bold"></i> <strong>100% विना तोडफोड उपाय:</strong> भिंती, दरवाजे न तोडता दोष निवारण</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-amber-600 font-bold"></i> नवीन घर / फ्लॅट खरेदीपूर्वी वास्तू तपासणी</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-amber-600 font-bold"></i> ऑफिस, दुकान, फॅक्टरी व्यवसाय वृद्धी वास्तू प्लॅनिंग</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-amber-600 font-bold"></i> पंचतत्व (अग्नी, जल, वायू, पृथ्वी, आकाश) संतुलन</li>
+                <div class="vv-service-card-body">
+                    <ul class="vv-service-list">
+                        <li><i class="ti ti-circle-check-filled"></i> <span><strong>१००% विना तोडफोड उपाय:</strong> भिंती, दरवाजे न तोडता दोष निवारण</span></li>
+                        <li><i class="ti ti-circle-check-filled"></i> <span>नवीन घर / फ्लॅट खरेदीपूर्वी सविस्तर वास्तू तपासणी</span></li>
+                        <li><i class="ti ti-circle-check-filled"></i> <span>ऑफिस, दुकान, फॅक्टरी व्यवसाय वृद्धी वास्तू प्लॅनिंग</span></li>
+                        <li><i class="ti ti-circle-check-filled"></i> <span>पंचतत्व (अग्नी, जल, वायू, पृथ्वी, आकाश) संतुलन</span></li>
                     </ul>
-                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-                        <a href="services.php#vastu" class="text-amber-700 font-semibold text-sm hover:underline">सविस्तर माहिती →</a>
-                        <a href="consultation.php?service=vastu" class="small-btn">सल्ला बुक करा</a>
+                    <div class="vv-service-card-footer">
+                        <a href="services.php#vastu" style="color:#aa770d; font-weight:700; font-size:14px; text-decoration:none;">सविस्तर माहिती →</a>
+                        <a href="consultation.php?service=vastu" class="vv-btn-primary" style="padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
                     </div>
                 </div>
             </div>
 
             <!-- Service 2: Numerology -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div class="h-48 bg-gradient-to-br from-purple-700 to-indigo-900 p-6 flex flex-col justify-between text-white relative overflow-hidden">
-                    <div class="absolute -right-4 -bottom-4 opacity-20">
-                        <i class="ti ti-numbers" style="font-size: 140px;"></i>
-                    </div>
-                    <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold w-max">
-                        अंकशास्त्र विज्ञान
-                    </span>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white mb-1">न्यूमरोलॉजी कन्सल्टेशन</h3>
-                        <p class="text-purple-200 text-xs">जन्मतारीख व अंकांचे रहस्य</p>
-                    </div>
+            <div class="vv-service-card">
+                <div class="vv-service-card-header bg-indigo">
+                    <span class="vv-service-tag">अंकशास्त्र विज्ञान</span>
+                    <h3>न्यूमरोलॉजी कन्सल्टेशन</h3>
+                    <p>जन्मतारीख व नावाचे गूढ रहस्य</p>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <ul class="space-y-3 text-sm text-gray-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-purple-600 font-bold"></i> <strong>Name Correction:</strong> नाव स्पेलिंग लकी व्हायब्रेशन्सवर आणणे</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-purple-600 font-bold"></i> <strong>Business Name:</strong> कंपनी/ब्रँडसाठी भाग्यशाली नाव निवड</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-purple-600 font-bold"></i> <strong>Mobile Numerology:</strong> लकी मोबाईल नंबर सिलेक्शन</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-purple-600 font-bold"></i> मुलांचे लकी नाव व जन्मतारीख विश्लेषण</li>
+                <div class="vv-service-card-body">
+                    <ul class="vv-service-list">
+                        <li><i class="ti ti-circle-check-filled" style="color:#3730a3;"></i> <span><strong>Name Correction:</strong> नाव स्पेलिंग लकी व्हायब्रेशन्सवर आणणे</span></li>
+                        <li><i class="ti ti-circle-check-filled" style="color:#3730a3;"></i> <span><strong>Business Name:</strong> कंपनी/ब्रँडसाठी भाग्यशाली नाव निवड</span></li>
+                        <li><i class="ti ti-circle-check-filled" style="color:#3730a3;"></i> <span><strong>Mobile Numerology:</strong> लकी मोबाईल नंबर सिलेक्शन</span></li>
+                        <li><i class="ti ti-circle-check-filled" style="color:#3730a3;"></i> <span>जन्मतारीख व मूलांक/भाग्यांक संतुलन</span></li>
                     </ul>
-                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-                        <a href="services.php#numerology" class="text-purple-700 font-semibold text-sm hover:underline">सविस्तर माहिती →</a>
-                        <a href="consultation.php?service=numerology" class="small-btn bg-purple-700 hover:bg-purple-800">सल्ला बुक करा</a>
+                    <div class="vv-service-card-footer">
+                        <a href="services.php#numerology" style="color:#3730a3; font-weight:700; font-size:14px; text-decoration:none;">सविस्तर माहिती →</a>
+                        <a href="consultation.php?service=numerology" class="vv-btn-primary" style="background:#3730a3; padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
                     </div>
                 </div>
             </div>
 
             <!-- Service 3: Astrology -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-amber-100 hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div class="h-48 bg-gradient-to-br from-rose-700 to-red-900 p-6 flex flex-col justify-between text-white relative overflow-hidden">
-                    <div class="absolute -right-4 -bottom-4 opacity-20">
-                        <i class="ti ti-sparkles" style="font-size: 140px;"></i>
-                    </div>
-                    <span class="bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-semibold w-max">
-                        वैदिक कुंडली मार्गदर्शन
-                    </span>
-                    <div>
-                        <h3 class="text-2xl font-bold text-white mb-1">ज्योतिष मार्गदर्शन</h3>
-                        <p class="text-rose-200 text-xs">ग्रहस्थिती व भविष्य वाटचाल</p>
-                    </div>
+            <div class="vv-service-card">
+                <div class="vv-service-card-header bg-maroon">
+                    <span class="vv-service-tag">वैदिक जन्मकुंडली</span>
+                    <h3>ज्योतिष मार्गदर्शन</h3>
+                    <p>ग्रहस्थिती व अचूक भविष्य वाटचाल</p>
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <ul class="space-y-3 text-sm text-gray-700 mb-6">
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-rose-600 font-bold"></i> संपूर्ण जन्मकुंडली विश्लेषण व दशा-महादशा प्रभाव</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-rose-600 font-bold"></i> करिअर, नोकरी, व्यवसाय व आर्थिक प्रगती सल्ला</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-rose-600 font-bold"></i> विवाह जुळवणी, वैवाहिक सुख व कौटुंबिक सौख्य</li>
-                        <li class="flex items-center gap-2"><i class="ti ti-check text-rose-600 font-bold"></i> साधे, सात्विक व परिणामकारक ग्रह शांती उपाय</li>
+                <div class="vv-service-card-body">
+                    <ul class="vv-service-list">
+                        <li><i class="ti ti-circle-check-filled" style="color:#8b1e28;"></i> <span>संपूर्ण जन्मकुंडली विश्लेषण व दशा-महादशा अभ्यास</span></li>
+                        <li><i class="ti ti-circle-check-filled" style="color:#8b1e28;"></i> <span>करिअर, नोकरी, व्यवसाय व आर्थिक प्रगती सल्ला</span></li>
+                        <li><i class="ti ti-circle-check-filled" style="color:#8b1e28;"></i> <span>विवाह गुणमिलन व कौटुंबिक सौख्य उपाय</span></li>
+                        <li><i class="ti ti-circle-check-filled" style="color:#8b1e28;"></i> <span>साधे, सात्विक व परिणामकारक ग्रहदोष निवारण</span></li>
                     </ul>
-                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
-                        <a href="services.php#astrology" class="text-rose-700 font-semibold text-sm hover:underline">सविस्तर माहिती →</a>
-                        <a href="consultation.php?service=astrology" class="small-btn bg-rose-700 hover:bg-rose-800">सल्ला बुक करा</a>
+                    <div class="vv-service-card-footer">
+                        <a href="services.php#astrology" style="color:#8b1e28; font-weight:700; font-size:14px; text-decoration:none;">सविस्तर माहिती →</a>
+                        <a href="consultation.php?service=astrology" class="vv-btn-primary" style="background:#8b1e28; padding:8px 18px; font-size:13px;">सल्ला बुक करा</a>
                     </div>
                 </div>
             </div>
@@ -219,209 +178,219 @@
 </section>
 
 <!-- Why Choose Vastuvardhaan -->
-<section class="whychooseus pt-20 pb-20">
+<section class="vv-why-section">
     <div class="container m-auto px-4">
-        <div class="section-title text-center mb-10">
-            <span class="mini-title">
-                ✨ आमची वैशिष्ट्ये
-            </span>
-            <h2>
-                वास्तुवर्धन का निवडावे?
-            </h2>
-            <div class="divider">
-                ☸
-            </div>
+        <div class="vv-section-header">
+            <span class="vv-section-sub">✨ आमची वैशिष्ट्ये</span>
+            <h2 class="vv-section-title">वास्तुवर्धन का निवडावे?</h2>
+            <div class="vv-divider-sym">☸</div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="box p-6 bg-white rounded-xl shadow border border-amber-100 text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center text-amber-700">
-                    <i class="ti ti-hammer-off text-3xl"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-gray-800">विना तोडफोड उपाय</h4>
-                <p class="text-sm text-gray-600">
-                    घराची किंवा ऑफिसची कोणतीही तोडफोड न करता दिशा, रंग, पिरॅमिड्स व क्रिस्टल्सने अचूक दोष निवारण.
-                </p>
-            </div>
 
-            <div class="box p-6 bg-white rounded-xl shadow border border-amber-100 text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center text-amber-700">
-                    <i class="ti ti-trophy text-3xl"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-gray-800">पुरस्कार प्राप्त तज्ज्ञ</h4>
-                <p class="text-sm text-gray-600">
-                    पुणे येथील वेदऋषी फाउंडेशन व ज्योतिष वास्तू विश्व संशोधन केंद्रातर्फे विशेष सन्मानित सल्लागार.
-                </p>
+        <div class="vv-why-grid">
+            <div class="vv-why-card">
+                <div class="vv-why-icon"><i class="ti ti-hammer-off"></i></div>
+                <h4>विना तोडफोड उपाय</h4>
+                <p>घराची किंवा ऑफिसची कोणतीही तोडफोड न करता अचूक दोष निवारण.</p>
             </div>
-
-            <div class="box p-6 bg-white rounded-xl shadow border border-amber-100 text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center text-amber-700">
-                    <i class="ti ti-microscope text-3xl"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-gray-800">शास्त्रशुद्ध पद्धत</h4>
-                <p class="text-sm text-gray-600">
-                    अंधश्रद्धेला थारा न देता वैदिक सिद्धांत आणि आधुनिक ऊर्जा तंत्रज्ञानाचा परिपूर्ण संगम.
-                </p>
+            <div class="vv-why-card">
+                <div class="vv-why-icon"><i class="ti ti-trophy"></i></div>
+                <h4>पुरस्कार प्राप्त तज्ज्ञ</h4>
+                <p>पुणे येथील वेदऋषी फाउंडेशन व संशोधन केंद्रातर्फे गौरवान्वित सल्लागार.</p>
             </div>
-
-            <div class="box p-6 bg-white rounded-xl shadow border border-amber-100 text-center">
-                <div class="w-16 h-16 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center text-amber-700">
-                    <i class="ti ti-user-check text-3xl"></i>
-                </div>
-                <h4 class="font-bold text-lg mb-2 text-gray-800">वैयक्तिक लक्ष</h4>
-                <p class="text-sm text-gray-600">
-                    प्रत्येक क्लायंटच्या समस्येचा सखोल अभ्यास करून १००% खाजगी आणि कस्टमाईज्ड मार्गदर्शन.
-                </p>
+            <div class="vv-why-card">
+                <div class="vv-why-icon"><i class="ti ti-math"></i></div>
+                <h4>शास्त्रशुद्ध पद्धत</h4>
+                <p>अंधश्रद्धेला थारा न देता वैदिक सिद्धांत आणि ऊर्जा तंत्रज्ञानाचा संगम.</p>
+            </div>
+            <div class="vv-why-card">
+                <div class="vv-why-icon"><i class="ti ti-user-check"></i></div>
+                <h4>वैयक्तिक लक्ष</h4>
+                <p>प्रत्येक क्लायंटच्या समस्येचा अभ्यास करून १००% खाजगी मार्गदर्शन.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Featured Vastu Products Section -->
-<section class="shop-section py-20 bg-amber-50/40" id="products">
+<!-- Vastu Products (All New Bracelets, Pyramids & Numerology Kits - NO Yantras) -->
+<section class="vv-products-section" id="products">
     <div class="container m-auto px-4">
-        <div class="section-title text-center mb-12">
-            <span class="mini-title">
-                ✨ वास्तू ऊर्जा व साधना साहित्य
-            </span>
-            <h2>
-                प्रमाणित व सिद्ध वास्तू प्रॉडक्ट्स
-            </h2>
-            <div class="divider">
-                ☸
-            </div>
-            <p class="text-gray-600 mt-2 max-w-xl mx-auto">
-                मंत्रोच्चाराने अभिमंत्रित व सिद्ध केलेले उच्च दर्जाचे वास्तू दोष निवारक साहित्य.
+        <div class="vv-section-header">
+            <span class="vv-section-sub">✨ सकारात्मक ऊर्जा व साधना उत्पादने</span>
+            <h2 class="vv-section-title">वास्तू ब्रेसलेट्स व ऊर्जा उत्पादने</h2>
+            <div class="vv-divider-sym">☸</div>
+            <p style="font-size:15px; color:#666; max-width:600px; margin:10px auto 0;">
+                मंत्रोच्चाराने सिद्ध व अभिमंत्रित केलेली अस्सल वास्तू ब्रेसलेट्स व दोष निवारक उत्पादने.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            <!-- Product 1 -->
-            <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between">
+        <div class="vv-products-grid">
+            <!-- Product 1: Pyrite Bracelet -->
+            <div class="vv-product-card">
                 <div>
-                    <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">सिद्ध & अभिमंत्रित</span>
-                    <div class="product-image my-4 text-center">
-                        <img src="img/yantra.png" alt="सिद्ध श्रीयंत्र" class="h-44 mx-auto object-contain">
+                    <span class="vv-product-badge">Money Magnet</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-pyrite.jpg" alt="पायराइट मनी ब्रेसलेट" style="max-height:160px; object-fit:contain;">
                     </div>
-                    <div class="product-info">
-                        <h3 class="font-bold text-lg text-gray-800">सिद्ध श्रीयंत्र (Brass Frame)</h3>
-                        <p class="text-xs text-gray-500 mb-3">घरातील आर्थिक वृद्धी, लक्ष्मी प्राप्ती आणि सकारात्मक ऊर्जेचा सतत प्रवाह निर्माण करते.</p>
-                    </div>
+                    <h3>नॅचरल पायराइट मनी ब्रेसलेट</h3>
+                    <p>सोन्यासारखा चमकणारा अस्सल पायराइट स्टोन. व्यवसायात नवीन ग्राहक, धनप्राप्ती आणि आर्थिक स्थैर्य आकर्षित करतो.</p>
                 </div>
-                <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                    <span class="font-bold text-xl text-amber-700">₹2,100</span>
-                    <a href="product_detail.php?id=1" class="small-btn">ऑर्डर करा</a>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹1,199</span>
+                    <a href="product_detail.php?id=1" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
-            <!-- Product 2 -->
-            <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between">
+            <!-- Product 2: Citrine Bracelet -->
+            <div class="vv-product-card">
                 <div>
-                    <span class="badge bg-amber-600 text-white text-xs px-2 py-1 rounded">दोष निवारक</span>
-                    <div class="product-image my-4 text-center">
-                        <img src="img/product.png" alt="ब्रास वास्तू पिरॅमिड" class="h-44 mx-auto object-contain">
+                    <span class="vv-product-badge">धनलक्ष्मी स्टोन</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-citrine.jpg" alt="सिट्रीन धनलक्ष्मी ब्रेसलेट" style="max-height:160px; object-fit:contain;">
                     </div>
-                    <div class="product-info">
-                        <h3 class="font-bold text-lg text-gray-800">ब्रास वास्तू पिरॅमिड (9x9)</h3>
-                        <p class="text-xs text-gray-500 mb-3">ईशान्य, नैऋत्य किंवा मुख्य प्रवेशद्वारातील वास्तू दोषांवर अत्यंत प्रभावशाली ऊर्जा पिरॅमिड.</p>
-                    </div>
+                    <h3>सिट्रीन धनलक्ष्मी क्रिस्टल ब्रेसलेट</h3>
+                    <p>व्यापारी व नोकरदारांसाठी अत्यंत भाग्यशाली स्टोन. निर्णयक्षमता वाढवून पैशांची बचत आणि आवक सुधारतो.</p>
                 </div>
-                <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                    <span class="font-bold text-xl text-amber-700">₹1,499</span>
-                    <a href="product_detail.php?id=2" class="small-btn">ऑर्डर करा</a>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹850</span>
+                    <a href="product_detail.php?id=2" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
 
-            <!-- Product 3 -->
-            <div class="product-card bg-white rounded-xl p-4 shadow border border-amber-100 flex flex-col justify-between">
+            <!-- Product 3: Tiger Eye Bracelet -->
+            <div class="vv-product-card">
                 <div>
-                    <span class="badge bg-purple-600 text-white text-xs px-2 py-1 rounded">Money Magnet</span>
-                    <div class="product-image my-4 text-center">
-                        <img src="img/product2.png" alt="नॅचरल पायराइट क्लस्टर" class="h-44 mx-auto object-contain">
+                    <span class="vv-product-badge">आत्मविश्वास व धाडस</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-tigereye.jpg" alt="टायगर आय ब्रेसलेट" style="max-height:160px; object-fit:contain;">
                     </div>
-                    <div class="product-info">
-                        <h3 class="font-bold text-lg text-gray-800">ओरिजिनल पायराइट स्टोन (Pyrite)</h3>
-                        <p class="text-xs text-gray-500 mb-3">व्यवसायात नवी गिऱ्हाईक, नवीन संधी आणि पैशांचा ओघ आकर्षित करणारा 'गोल्डन मनी स्टोन'.</p>
-                    </div>
+                    <h3>टायगर आय पॉवर ब्रेसलेट</h3>
+                    <p>भीती दूर करून आत्मविश्वास निर्माण करतो, नजर दोषापासून संरक्षण देतो आणि लक्ष केंद्रित करण्यास मदत करतो.</p>
                 </div>
-                <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-                    <span class="font-bold text-xl text-amber-700">₹1,199</span>
-                    <a href="product_detail.php?id=3" class="small-btn">ऑर्डर करा</a>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹799</span>
+                    <a href="product_detail.php?id=3" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 4: Black Tourmaline -->
+            <div class="vv-product-card">
+                <div>
+                    <span class="vv-product-badge">नजर सुरक्षा</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-tourmaline.jpg" alt="ब्लॅक टूर्मलाइन ब्रेसलेट" style="max-height:160px; object-fit:contain;">
+                    </div>
+                    <h3>ब्लॅक टूर्मलाइन नजर सुरक्षा ब्रेसलेट</h3>
+                    <p>वाईट नजर, ईर्ष्या आणि बाहेरील नकारात्मक ऊर्जेपासून अभेद्य सुरक्षा कवच प्रदान करणारे शक्तिशाली रत्न ब्रेसलेट.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹699</span>
+                    <a href="product_detail.php?id=4" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 5: Vastu Pyramid -->
+            <div class="vv-product-card">
+                <div>
+                    <span class="vv-product-badge">विना तोडफोड उपाय</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-pyramid.jpg" alt="ब्रास वास्तू पिरॅमिड" style="max-height:160px; object-fit:contain;">
+                    </div>
+                    <h3>ब्रास वास्तू ऊर्जा पिरॅमिड (९x९)</h3>
+                    <p>घरातील किंवा कार्यालयातील दिशा दोष, कट कॉर्नर आणि प्रवेशद्वार दोषांवर तोडफोड न करता अत्यंत प्रभावशाली उपाय.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹1,499</span>
+                    <a href="product_detail.php?id=5" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
+                </div>
+            </div>
+
+            <!-- Product 6: Numerology Name Correction Kit -->
+            <div class="vv-product-card">
+                <div>
+                    <span class="vv-product-badge">न्यूमरोलॉजी विशेष</span>
+                    <div class="vv-product-img-wrap">
+                        <img src="./img/product-numerology.jpg" alt="न्यूमरोलॉजी किट" style="max-height:160px; object-fit:contain;">
+                    </div>
+                    <h3>पर्सनलाइझ्ड न्यूमरोलॉजी किट</h3>
+                    <p>जन्मतारखेनुसार संपूर्ण अंकशास्त्र रिपोर्ट, लकी नंबर, सही (Signature) नमुना आणि नेम स्पेलिंग गाइड.</p>
+                </div>
+                <div class="vv-product-bottom">
+                    <span class="vv-price">₹999</span>
+                    <a href="product_detail.php?id=6" class="vv-btn-primary" style="padding:7px 18px; font-size:13px;">ऑर्डर करा</a>
                 </div>
             </div>
         </div>
 
-        <div class="text-center mt-10">
-            <a href="products.php" class="big_btn">सर्व वास्तू प्रॉडक्ट्स पहा →</a>
+        <div style="text-align:center; margin-top:40px;">
+            <a href="products.php" class="vv-btn-primary" style="padding:14px 34px; font-size:16px;">सर्व वास्तू प्रॉडक्ट्स पहा →</a>
         </div>
     </div>
 </section>
 
-<!-- Direct Booking & Contact CTA Section -->
-<section class="contact-section py-20 bg-slate-900 text-white">
+<!-- Direct Booking & Consultation Form Section -->
+<section style="padding:70px 0; background:#1e1810; color:#fff;" id="bookingForm">
     <div class="container m-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:40px; align-items:center;">
             <div>
-                <span class="inline-block bg-amber-500/20 text-amber-300 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold mb-3">
-                    वैयक्तिक अपॉइंटमेंट
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4">
-                    तुमच्या समस्यांवर त्वरित व अचूक समाधान हवे आहे?
+                <span class="vv-section-sub" style="color:#d49a1d;">✨ वैयक्तिक मार्गदर्शन</span>
+                <h2 style="font-size:32px; font-weight:800; color:#fff; margin-bottom:14px; line-height:1.25;">
+                    आपल्या समस्यांवर त्वरित व खात्रीशीर तोडगा हवा आहे?
                 </h2>
-                <p class="text-gray-300 mb-6 leading-relaxed">
-                    घरातील कलह, आर्थिक अडचण, व्यवसायातील मंदी किंवा लग्नातील अडथळे — आजच तज्ज्ञांशी थेट संपर्क साधा. आम्ही प्रत्यक्ष भेट (Site Visit) किंवा ऑनलाइन व्हिडिओ कन्सल्टेशन द्वारे मार्गदर्शन देतो.
+                <p style="font-size:15px; line-height:1.7; color:#c7beaf; margin-bottom:24px;">
+                    घरातील नकारात्मकता, व्यवसायातील मंदी किंवा लग्नातील अडथळे — आजच तज्ज्ञांशी चर्चा करा. आम्ही प्रत्यक्ष भेट (Site Visit) किंवा ऑनलाइन व्हिडिओ कन्सल्टेशन द्वारे वैयक्तिक मार्गदर्शन देतो.
                 </p>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 text-xl">
+                <div style="display:flex; flex-direction:column; gap:16px;">
+                    <div style="display:flex; align-items:center; gap:14px;">
+                        <div style="width:44px; height:44px; border-radius:50%; background:rgba(212,154,29,0.2); display:flex; align-items:center; justify-content:center; color:#d49a1d; font-size:20px;">
                             <i class="ti ti-phone-call"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-gray-400 m-0">थेट कॉल करा / WhatsApp</p>
-                            <h4 class="text-lg font-bold text-white m-0">+91 98765 43210</h4>
+                            <div style="font-size:12px; color:#aaa;">थेट फोन किंवा WhatsApp</div>
+                            <div style="font-size:18px; font-weight:700; color:#fff;">+91 98765 43210</div>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400 text-xl">
+                    <div style="display:flex; align-items:center; gap:14px;">
+                        <div style="width:44px; height:44px; border-radius:50%; background:rgba(212,154,29,0.2); display:flex; align-items:center; justify-content:center; color:#d49a1d; font-size:20px;">
                             <i class="ti ti-mail"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-gray-400 m-0">ईमेल द्वारे संपर्क</p>
-                            <h4 class="text-lg font-bold text-white m-0">contact@vastuvardhaan.com</h4>
+                            <div style="font-size:12px; color:#aaa;">अधिकृत ईमेल</div>
+                            <div style="font-size:16px; font-weight:700; color:#fff;">contact@vastuvardhaan.com</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Booking Quick Form -->
-            <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl border border-amber-200">
-                <h3 class="text-2xl font-bold mb-2 text-gray-900">सल्ला बुक करा (Consultation Form)</h3>
-                <p class="text-xs text-gray-500 mb-6">खालील माहिती भरा, आम्ही तुम्हाला लवकरच संपर्क करू.</p>
-                
-                <form action="consultation.php" method="POST" class="space-y-4">
+            <!-- Booking Form Card -->
+            <div style="background:#ffffff; color:#2d3748; padding:30px; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,0.3);">
+                <h3 style="font-size:22px; font-weight:800; margin-bottom:6px; color:#1a202c;">सल्ला बुक करा (Consultation Form)</h3>
+                <p style="font-size:13px; color:#666; margin-bottom:20px;">माहिती भरा, आम्ही २४ तासांत संपर्क करू.</p>
+
+                <form action="contact.php" method="POST" style="display:flex; flex-direction:column; gap:14px;">
                     <div>
-                        <label class="block text-xs font-semibold text-gray-700 mb-1">आपले पूर्ण नाव</label>
-                        <input type="text" name="name" required placeholder="नाव प्रविष्ट करा" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                        <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#4a5568;">आपले पूर्ण नाव *</label>
+                        <input type="text" name="name" required placeholder="नाव लिहा" style="width:100%; padding:10px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-1">मोबाईल नंबर</label>
-                            <input type="tel" name="phone" required placeholder="१० अंकी नंबर" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                            <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#4a5568;">मोबाईल नंबर *</label>
+                            <input type="tel" name="phone" required placeholder="१० अंकी नंबर" style="width:100%; padding:10px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-gray-700 mb-1">शहर / ठिकाण</label>
-                            <input type="text" name="city" placeholder="उदा. पुणे, मुंबई" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                            <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#4a5568;">शहर</label>
+                            <input type="text" name="city" placeholder="उदा. पुणे" style="width:100%; padding:10px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-xs font-semibold text-gray-700 mb-1">हवी असलेली सेवा निवडा</label>
-                        <select name="service" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                        <label style="display:block; font-size:12px; font-weight:700; margin-bottom:4px; color:#4a5568;">हवी असलेली सेवा *</label>
+                        <select name="service" style="width:100%; padding:10px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                             <option value="vastu">वास्तुशास्त्र सल्ला (Vastushastra)</option>
-                            <option value="numerology">न्यूमरोलॉजी / नाव शुद्धीकरण (Numerology)</option>
-                            <option value="astrology">ज्योतिष मार्गदर्शन व कुंडली (Astrology)</option>
+                            <option value="numerology">न्यूमरोलॉजी व नाव शुद्धीकरण (Numerology)</option>
+                            <option value="astrology">जन्मकुंडली विश्लेषण (Astrology)</option>
                             <option value="all">सर्वसमावेशक कन्सल्टेशन</option>
                         </select>
                     </div>
-                    <button type="submit" class="big_btn w-full text-center mt-2">
+                    <button type="submit" class="vv-btn-primary" style="width:100%; border:none; cursor:pointer; padding:12px; font-size:15px; margin-top:8px;">
                         अपॉइंटमेंट सबमिट करा →
                     </button>
                 </form>

@@ -1,0 +1,660 @@
+/* ==========================================================================
+   Vastuvardhaan - Dedicated Custom Theme & Mobile-Responsive CSS
+   ========================================================================== */
+
+/* Global Typography - Native Devanagari & Latin support */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --vv-primary: #b8860b;
+    --vv-primary-dark: #8c6508;
+    --vv-maroon: #7a1f26;
+    --vv-bg-cream: #fdfbf7;
+    --vv-border-gold: rgba(184, 134, 11, 0.25);
+}
+
+body, button, input, select, textarea {
+    font-family: 'Mukta', 'Poppins', sans-serif !important;
+    color: #2d3748;
+    background-color: var(--vv-bg-cream);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mukta', 'Poppins', sans-serif !important;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Header & Navigation Fixes */
+.navigation {
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 10px 0;
+}
+
+.navigation .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .logo img {
+    height: 48px;
+    width: auto;
+    max-width: 170px;
+    object-fit: contain;
+}
+
+/* Hero Section */
+.vv-hero-section {
+    position: relative;
+    padding: 60px 0 40px;
+    background: radial-gradient(circle at 75% 40%, #fff7eb 0%, #faebd7 50%, #f6e3c5 100%);
+    overflow: hidden;
+}
+
+.vv-hero-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (min-width: 992px) {
+    .vv-hero-grid {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .vv-hero-text {
+        flex: 1.1;
+    }
+    .vv-hero-image-wrap {
+        flex: 0.9;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.vv-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid #e0c598;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8c6508;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(184, 134, 11, 0.12);
+}
+
+.vv-badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+}
+
+.vv-hero-title {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 16px;
+    line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+    .vv-hero-title {
+        font-size: 42px;
+    }
+}
+
+.vv-hero-subtitle {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.vv-btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.vv-btn-primary {
+    background: linear-gradient(135deg, #d49a1d 0%, #aa770d 100%);
+    color: #fff !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 14px rgba(170, 119, 13, 0.35);
+    transition: all 0.25s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vv-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(170, 119, 13, 0.45);
+}
+
+.vv-btn-secondary {
+    background: #ffffff;
+    color: #8c6508 !important;
+    border: 2px solid #d49a1d;
+    padding: 11px 26px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.25s ease;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vv-btn-secondary:hover {
+    background: #fdf6ec;
+}
+
+/* Hero Portrait Visual (Replacing Yantra with Clean Sacred Glow Backdrop) */
+.vv-portrait-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 420px;
+}
+
+@media (max-width: 640px) {
+    .vv-portrait-container {
+        width: 270px;
+        height: 360px;
+    }
+}
+
+.vv-portrait-aura {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(230, 180, 70, 0.45) 0%, rgba(212, 154, 29, 0.15) 60%, transparent 75%);
+    filter: blur(8px);
+    animation: vvPulse 4s infinite ease-in-out;
+}
+
+@keyframes vvPulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.08); opacity: 1; }
+}
+
+.vv-portrait-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 180px 180px 30px 30px;
+    overflow: hidden;
+    border: 4px solid #c99320;
+    box-shadow: 0 16px 40px rgba(170, 119, 13, 0.3);
+    background: linear-gradient(180deg, #fff7eb 0%, #e8d0ad 100%);
+    z-index: 2;
+}
+
+.vv-portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.vv-portrait-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(140, 101, 8, 0.95);
+    color: #ffffff;
+    padding: 6px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    z-index: 3;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Trust Counters Strip */
+.vv-trust-strip {
+    background: #ffffff;
+    border-top: 1px solid #ebd7b5;
+    border-bottom: 1px solid #ebd7b5;
+    padding: 24px 0;
+}
+
+.vv-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .vv-trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+}
+
+.vv-trust-card {
+    background: #fdfbf7;
+    border: 1px solid #f0e2cc;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.vv-trust-card h3 {
+    font-size: 26px;
+    color: #9c6c09;
+    font-weight: 800;
+    margin: 0;
+}
+
+.vv-trust-card p {
+    font-size: 13px;
+    color: #555;
+    margin: 4px 0 0;
+    font-weight: 500;
+}
+
+/* Section Title Generic */
+.vv-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.vv-section-sub {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #9c6c09;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.vv-section-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1a202c;
+    margin: 0 0 10px;
+}
+
+.vv-divider-sym {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #d49a1d;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.vv-divider-sym::before, .vv-divider-sym::after {
+    content: "";
+    height: 1px;
+    width: 50px;
+    background: #d49a1d;
+}
+
+/* Core Services Grid */
+.vv-services-section {
+    padding: 60px 0;
+    background: #fbf7ee;
+}
+
+.vv-services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+}
+
+@media (min-width: 768px) {
+    .vv-services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.vv-service-card {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #ebd7b5;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.vv-service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+}
+
+.vv-service-card-header {
+    padding: 24px 20px;
+    color: #fff;
+    position: relative;
+}
+
+.vv-service-card-header.bg-gold {
+    background: linear-gradient(135deg, #aa770d 0%, #7d5402 100%);
+}
+
+.vv-service-card-header.bg-maroon {
+    background: linear-gradient(135deg, #8b1e28 0%, #570c14 100%);
+}
+
+.vv-service-card-header.bg-indigo {
+    background: linear-gradient(135deg, #3730a3 0%, #1e1b4b 100%);
+}
+
+.vv-service-tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.22);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.vv-service-card-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.vv-service-card-header p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin: 4px 0 0;
+}
+
+.vv-service-card-body {
+    padding: 24px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vv-service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.vv-service-list li {
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.45;
+}
+
+.vv-service-list li i {
+    color: #aa770d;
+    font-size: 16px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.vv-service-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid #f0e6d6;
+}
+
+/* Why Choose Us Grid */
+.vv-why-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.vv-why-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 640px) {
+    .vv-why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .vv-why-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.vv-why-card {
+    background: #fdfbf7;
+    border: 1px solid #ebd7b5;
+    border-radius: 14px;
+    padding: 24px 18px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.vv-why-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: #faebd7;
+    color: #9c6c09;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.vv-why-card h4 {
+    font-size: 18px;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+.vv-why-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Vastu Products Grid (All New Vastu Bracelets, Pyramids, Numerology Kits) */
+.vv-products-section {
+    padding: 60px 0;
+    background: #fbf7ee;
+}
+
+.vv-products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 640px) {
+    .vv-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .vv-products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.vv-product-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #ebd7b5;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vv-product-img-wrap {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdfbf7;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    padding: 10px;
+}
+
+.vv-product-badge {
+    display: inline-block;
+    background: #aa770d;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.vv-product-card h3 {
+    font-size: 17px;
+    color: #1a202c;
+    margin-bottom: 6px;
+}
+
+.vv-product-card p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 14px;
+    line-height: 1.45;
+}
+
+.vv-product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+    border-top: 1px solid #f0e6d6;
+}
+
+.vv-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #9c6c09;
+}
+
+/* Footer Fixes (Robust CSS Grid, No overlapping) */
+.vv-footer {
+    background: #20170a;
+    color: #e2d9cd;
+    padding: 50px 0 20px;
+    border-top: 3px solid #aa770d;
+}
+
+.vv-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+    .vv-footer-grid {
+        grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    }
+}
+
+.vv-footer-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.vv-footer-logo-wrap img {
+    height: 48px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    background: #fff;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.vv-footer-col h3 {
+    color: #d49a1d;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    border-bottom: 1px solid rgba(212, 154, 29, 0.25);
+    padding-bottom: 8px;
+}
+
+.vv-footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vv-footer-col ul li {
+    margin-bottom: 9px;
+}
+
+.vv-footer-col ul li a {
+    color: #d1c5b4;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.vv-footer-col ul li a:hover {
+    color: #f3cf7a;
+    padding-left: 4px;
+}
+
+.vv-footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #9c9284;
+}
+
+@media (min-width: 768px) {
+    .vv-footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,82 +1,72 @@
-<!-- footer  -->
-<footer class="footer">
-    <div class="container m-auto">
-        <div class="footer-top">
-            <!-- About / Brand Info -->
-            <div class="footer-col about">
-                <div class="flex items-center gap-3 mb-4">
-                    <img src="./img/logo.jpg" alt="वास्तुवर्धन" class="h-12 w-auto bg-white rounded p-1">
+<!-- Footer -->
+<footer class="vv-footer">
+    <div class="container m-auto px-4">
+        <div class="vv-footer-grid">
+            <!-- Brand Info & Logo -->
+            <div class="vv-footer-col">
+                <div class="vv-footer-logo-wrap">
+                    <img src="./img/logo.jpg" alt="वास्तुवर्धन">
                     <div>
-                        <h3 class="text-white font-bold text-lg leading-tight m-0">वास्तुवर्धन</h3>
-                        <p class="text-xs text-amber-300 m-0">वास्तुशास्त्र व न्यूमरोलॉजी</p>
+                        <h4 style="color:#fff; font-size:18px; margin:0; font-weight:700;">वास्तुवर्धन</h4>
+                        <span style="color:#d49a1d; font-size:12px;">वास्तुशास्त्र व न्यूमरोलॉजी</span>
                     </div>
                 </div>
-                <p class="text-gray-300 text-sm mb-4 leading-relaxed">
-                    घरात किंवा व्यवसायात विना तोडफोड वास्तू उपाय, शास्त्रशुद्ध न्यूमरोलॉजी (अंकशास्त्र) आणि अचूक ज्योतिषीय मार्गदर्शन.
+                <p style="font-size:14px; line-height:1.6; color:#b5ab9d; margin-bottom:16px;">
+                    घर व व्यवसायात विना तोडफोड वास्तू उपाय, अचूक अंकशास्त्र (न्यूमरोलॉजी) आणि वैदिक जन्मकुंडली मार्गदर्शन.
                 </p>
-                <div class="social-icons">
-                    <h3>Connect With Us</h3>
-                    <div class="ft-social-body">
-                        <a href="https://wa.me/" title="WhatsApp" target="_blank"><i class="ti ti-brand-whatsapp"></i></a>
-                        <a href="#" title="Instagram"><i class="ti ti-brand-instagram"></i></a>
-                        <a href="#" title="Facebook"><i class="ti ti-brand-facebook"></i></a>
-                        <a href="#" title="YouTube"><i class="ti ti-brand-youtube"></i></a>
-                    </div>
+                <div style="display:flex; gap:10px;">
+                    <a href="https://wa.me/919876543210" target="_blank" style="width:36px; height:36px; border-radius:50%; background:#25D366; color:#fff; display:flex; align-items:center; justify-content:center; text-decoration:none;"><i class="ti ti-brand-whatsapp text-lg"></i></a>
+                    <a href="#" style="width:36px; height:36px; border-radius:50%; background:#E4405F; color:#fff; display:flex; align-items:center; justify-content:center; text-decoration:none;"><i class="ti ti-brand-instagram text-lg"></i></a>
+                    <a href="#" style="width:36px; height:36px; border-radius:50%; background:#1877F2; color:#fff; display:flex; align-items:center; justify-content:center; text-decoration:none;"><i class="ti ti-brand-facebook text-lg"></i></a>
+                    <a href="#" style="width:36px; height:36px; border-radius:50%; background:#FF0000; color:#fff; display:flex; align-items:center; justify-content:center; text-decoration:none;"><i class="ti ti-brand-youtube text-lg"></i></a>
                 </div>
             </div>
 
             <!-- Services -->
-            <div class="footer-col">
-                <h3>Our Services</h3>
+            <div class="vv-footer-col">
+                <h3>आमच्या सेवा</h3>
                 <ul>
-                    <li><a href="services.php#vastu">वास्तुशास्त्र सल्ला (Residential & Commercial)</a></li>
-                    <li><a href="services.php#non-demo">विना तोडफोड वास्तू उपाय (Non-Demolition)</a></li>
-                    <li><a href="services.php#numerology">न्यूमरोलॉजी कन्सल्टेशन (Name & Business)</a></li>
-                    <li><a href="services.php#mobile-num">मोबाईल न्यूमरोलॉजी (Lucky Numbers)</a></li>
-                    <li><a href="services.php#astrology">ज्योतिष मार्गदर्शन व कुंडली विश्लेषण</a></li>
-                    <li><a href="consultation.php">वैयक्तिक अपॉइंटमेंट (Book Session)</a></li>
+                    <li><a href="services.php#vastu"><i class="ti ti-chevron-right text-xs"></i> वास्तुशास्त्र सल्ला</a></li>
+                    <li><a href="services.php#non-demo"><i class="ti ti-chevron-right text-xs"></i> विना तोडफोड वास्तू उपाय</a></li>
+                    <li><a href="services.php#numerology"><i class="ti ti-chevron-right text-xs"></i> न्यूमरोलॉजी व नाव शुद्धीकरण</a></li>
+                    <li><a href="services.php#mobile-num"><i class="ti ti-chevron-right text-xs"></i> लकी मोबाईल नंबर सिलेक्शन</a></li>
+                    <li><a href="services.php#astrology"><i class="ti ti-chevron-right text-xs"></i> जन्मकुंडली विश्लेषण</a></li>
                 </ul>
             </div>
 
-            <!-- Vastu Products -->
-            <div class="footer-col">
-                <h3>Vastu Products</h3>
+            <!-- Vastu Products (All Bracelets & Tools) -->
+            <div class="vv-footer-col">
+                <h3>वास्तू प्रॉडक्ट्स</h3>
                 <ul>
-                    <li><a href="products.php?cat=yantra">सिद्ध श्रीयंत्र (Energized Shree Yantra)</a></li>
-                    <li><a href="products.php?cat=pyramid">वास्तू ब्रास पिरॅमिड्स (Vastu Pyramids)</a></li>
-                    <li><a href="products.php?cat=crystals">पायराइट मनी मॅग्नेट (Natural Pyrite)</a></li>
-                    <li><a href="products.php?cat=crystals">सिट्रीन धनवर्धक ब्रेसलेट (Citrine)</a></li>
-                    <li><a href="products.php?cat=strips">पंचतत्व कॉपर व ब्रास पट्ट्या</a></li>
-                    <li><a href="products.php?cat=protection">ऑरा क्लिंजिंग व नजर सुरक्षा किट</a></li>
+                    <li><a href="products.php?cat=bracelets"><i class="ti ti-chevron-right text-xs"></i> पायराइट धनवर्धक ब्रेसलेट</a></li>
+                    <li><a href="products.php?cat=bracelets"><i class="ti ti-chevron-right text-xs"></i> सिट्रीन लक्ष्मी क्रिस्टल ब्रेसलेट</a></li>
+                    <li><a href="products.php?cat=bracelets"><i class="ti ti-chevron-right text-xs"></i> टायगर आय व नजर सुरक्षा</a></li>
+                    <li><a href="products.php?cat=pyramid"><i class="ti ti-chevron-right text-xs"></i> ब्रास ९x९ वास्तू पिरॅमिड</a></li>
+                    <li><a href="products.php?cat=kits"><i class="ti ti-chevron-right text-xs"></i> ऑरा क्लिंजिंग वास्तू किट</a></li>
                 </ul>
             </div>
 
-            <!-- Contact -->
-            <div class="footer-col">
-                <h3>Contact & Location</h3>
-                <p><i class="ti ti-award"></i> <strong>राज्यस्तरीय पुरस्काराने सन्मानित</strong></p>
-                <p><i class="ti ti-certificate"></i> ISO 9001:2015 प्रमाणित पद्धती</p>
-                <p><i class="ti ti-device-mobile"></i> +91 98765 43210 / WhatsApp Available</p>
-                <p><i class="ti ti-mail"></i> contact@vastuvardhaan.com</p>
-                <p><i class="ti ti-clock"></i> सोम - शनि: सकाळी 10 ते सायं 7</p>
-
-                <div class="mt-4">
-                    <a href="consultation.php" class="small-btn inline-block text-center w-full">आजच सल्ला बुक करा</a>
-                </div>
+            <!-- Contact & Trust -->
+            <div class="vv-footer-col">
+                <h3>संपर्क व सन्मान</h3>
+                <p style="font-size:13px; margin:0 0 8px; color:#d1c5b4;"><i class="ti ti-award" style="color:#d49a1d;"></i> <strong>राज्यस्तरीय गौरव प्राप्त</strong> (पुणे)</p>
+                <p style="font-size:13px; margin:0 0 8px; color:#d1c5b4;"><i class="ti ti-certificate" style="color:#d49a1d;"></i> ISO 9001:2015 प्रमाणित संस्था</p>
+                <p style="font-size:13px; margin:0 0 8px; color:#d1c5b4;"><i class="ti ti-phone-call" style="color:#d49a1d;"></i> +91 98765 43210</p>
+                <p style="font-size:13px; margin:0 0 16px; color:#d1c5b4;"><i class="ti ti-mail" style="color:#d49a1d;"></i> contact@vastuvardhaan.com</p>
+                <a href="consultation.php" class="vv-btn-primary" style="display:block; text-align:center; padding:9px 18px; font-size:14px;">अपॉइंटमेंट बुक करा</a>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>
-                © <?php echo date("Y"); ?> वास्तुवर्धन वास्तुशास्त्र व न्यूमरोलॉजी (Vastuvardhaan). All Rights Reserved.
-            </p>
-
-            <div class="footer-links">
-                <a href="about.php">About Us</a>
-                <a href="services.php">Services</a>
-                <a href="products.php">Products</a>
-                <a href="awards.php">Awards</a>
-                <a href="contact.php">Contact Us</a>
+        <div class="vv-footer-bottom">
+            <div>
+                © <?php echo date("Y"); ?> वास्तुवर्धन वास्तुशास्त्र व न्यूमरोलॉजी. All Rights Reserved.
+            </div>
+            <div style="display:flex; gap:16px;">
+                <a href="about.php" style="color:#9c9284; text-decoration:none;">About</a>
+                <a href="services.php" style="color:#9c9284; text-decoration:none;">Services</a>
+                <a href="products.php" style="color:#9c9284; text-decoration:none;">Products</a>
+                <a href="awards.php" style="color:#9c9284; text-decoration:none;">Awards</a>
+                <a href="contact.php" style="color:#9c9284; text-decoration:none;">Contact</a>
             </div>
         </div>
     </div>

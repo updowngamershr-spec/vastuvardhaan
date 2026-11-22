@@ -1,67 +1,57 @@
 <?php include 'inc/header.php'; ?>
 
 <!-- Inner Banner -->
-<div class="inner_banner py-16 bg-gradient-to-r from-amber-700 to-amber-900 text-white text-center">
-    <h1 class="text-3xl md:text-5xl font-bold mb-2">आमच्या प्रमुख सेवा (Our Services)</h1>
-    <p class="text-amber-200 text-sm md:text-base max-w-xl mx-auto">
-        वास्तुशास्त्र, अंकशास्त्र (न्यूमरोलॉजी) आणि ज्योतिषीय मार्गदर्शनाने तुमच्या जीवनात आणि व्यवसायात सकारात्मक परिवर्तन घडवा.
+<div class="inner_banner" style="padding:50px 0; background:linear-gradient(135deg, #8c6508 0%, #5c4103 100%); text-align:center; color:#fff;">
+    <h1 style="font-size:36px; font-weight:800; margin:0 0 8px;">आमच्या प्रमुख सेवा (Our Services)</h1>
+    <p style="font-size:15px; color:#f3dfbe; margin:0; max-width:650px; margin:0 auto;">
+        वास्तुशास्त्र, अंकशास्त्र (न्यूमरोलॉजी) आणि वैदिक ज्योतिषीय मार्गदर्शनाने तुमच्या जीवनात सुख, समृद्धी आणि यश आणा.
     </p>
 </div>
 
-<!-- Service 1: Vastushastra Detailed -->
-<section class="py-20 bg-white" id="vastu">
+<!-- Service 1: Vastushastra -->
+<section style="padding:70px 0; background:#ffffff;" id="vastu">
     <div class="container m-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:center;">
             <div>
-                <span class="inline-block bg-amber-100 text-amber-800 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold mb-2">
-                    सेवा १ • ऊर्जा व दिशा संतुलन
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <span class="vv-section-sub">सेवा १ • दिशा व ऊर्जा संतुलन</span>
+                <h2 style="font-size:32px; font-weight:800; color:#1a202c; margin:0 0 14px; line-height:1.25;">
                     वास्तुशास्त्र सल्ला व विना तोडफोड उपाय
                 </h2>
-                <div class="w-16 h-1 bg-amber-600 mb-6 rounded"></div>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    वास्तुशास्त्र हे निसर्गातील पंचमहाभूते (अग्नी, जल, वायू, पृथ्वी, आकाश) आणि दिशांच्या ऊर्जेचा शास्त्रीय अभ्यास आहे. अयोग्य दिशेला बांधलेली रचना घरातील सदस्यांचे आरोग्य, मनशांती आणि आर्थिक प्रगतीवर विपरीत परिणाम करते.
+                <div style="width:50px; height:3px; background:#d49a1d; margin-bottom:20px; border-radius:2px;"></div>
+                <p style="font-size:15px; line-height:1.7; color:#4a5568; margin-bottom:16px;">
+                    वास्तुशास्त्र हे निसर्गातील पंचमहाभूते (अग्नी, जल, वायू, पृथ्वी, आकाश) आणि दिशांच्या चुंबकीय ऊर्जेचा शास्त्रीय अभ्यास आहे. अयोग्य दिशेमुळे आरोग्य, मानसिक शांती आणि आर्थिक प्रगतीवर विपरीत परिणाम होतो.
                 </p>
-                <div class="space-y-3 mb-8">
-                    <div class="p-3 bg-amber-50 rounded-lg flex items-start gap-3">
-                        <i class="ti ti-check-circle text-amber-700 text-xl flex-shrink-0 mt-0.5"></i>
+                <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:26px;">
+                    <div style="background:#fdfbf7; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-shield-check" style="color:#aa770d; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">100% विना तोडफोड उपाय (Zero Demolition)</h4>
-                            <p class="text-xs text-gray-600">आम्ही घर किंवा ऑफिसची कोणतीही भिंत किंवा रचना तोडण्याचा सल्ला देत नाही. रंग, ऊर्जा पिरॅमिड्स, ब्रास पट्ट्या आणि क्रिस्टल्सने संपूर्ण दोष निवारण होते.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">१००% विना तोडफोड उपाय (Zero Demolition)</strong>
+                            <span style="font-size:13px; color:#666;">भिंती, दरवाजे न तोडता रंग, पिरॅमिड्स, ब्रास पट्ट्या व क्रिस्टल्स द्वारे संपूर्ण दोष निवारण.</span>
                         </div>
                     </div>
-                    <div class="p-3 bg-amber-50 rounded-lg flex items-start gap-3">
-                        <i class="ti ti-check-circle text-amber-700 text-xl flex-shrink-0 mt-0.5"></i>
+                    <div style="background:#fdfbf7; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-home" style="color:#aa770d; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">निवासी व व्यावसायिक वास्तू (Residential & Commercial)</h4>
-                            <p class="text-xs text-gray-600">फ्लॅट, रो-हाऊस, बंगला, दुकान, शोरूम, फॅक्टरी आणि कॉर्पोरेट ऑफिससाठी विशेष वास्तू ऑडिट.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">निवासी व व्यावसायिक वास्तू परीक्षण</strong>
+                            <span style="font-size:13px; color:#666;">फ्लॅट, बंगला, ऑफिस, दुकान, शोरूम व फॅक्टरीसाठी सविस्तर वास्तू ऑडिट.</span>
                         </div>
                     </div>
-                    <div class="p-3 bg-amber-50 rounded-lg flex items-start gap-3">
-                        <i class="ti ti-check-circle text-amber-700 text-xl flex-shrink-0 mt-0.5"></i>
+                    <div style="background:#fdfbf7; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-map-2" style="color:#aa770d; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">नवीन जागा खरेदीपूर्वी सल्ला</h4>
-                            <p class="text-xs text-gray-600">नवीन फ्लॅट किंवा जमिनीचा नकाशा तपासून ती जागा तुमच्या राशी व मूलांकानुसार योग्य आहे का याची अचूक पडताळणी.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">नवीन जागा खरेदीपूर्वी वास्तू तपासणी</strong>
+                            <span style="font-size:13px; color:#666;">नवीन फ्लॅट किंवा जमिनीचा नकाशा तपासून ती जागा तुमच्यासाठी लाभदायक आहे का याची पडताळणी.</span>
                         </div>
                     </div>
                 </div>
-                <a href="consultation.php?service=vastu" class="big_btn">वास्तू सल्ला बुक करा →</a>
+                <a href="consultation.php?service=vastu" class="vv-btn-primary">वास्तू सल्ला बुक करा →</a>
             </div>
 
-            <div class="relative">
-                <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-200">
-                    <img src="./img/yantra-background.jpg" alt="Vastushastra Energy" class="w-full h-[420px] object-cover">
-                </div>
-                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg border border-amber-100 max-w-xs hidden sm:block">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-amber-600 text-white flex items-center justify-center font-bold">
-                            <i class="ti ti-shield-check"></i>
-                        </div>
-                        <div>
-                            <h5 class="text-xs font-bold text-gray-800 m-0">वैज्ञानिक व सिद्ध उपाय</h5>
-                            <p class="text-[11px] text-gray-500 m-0">हजारो घरांमध्ये सकारात्मक बदल</p>
-                        </div>
+            <div style="text-align:center;">
+                <div style="border-radius:20px; overflow:hidden; border:4px solid #ebd7b5; box-shadow:0 12px 30px rgba(0,0,0,0.08); background:#fdfbf7; padding:30px;">
+                    <img src="./img/product-pyramid.jpg" alt="Vastu Pyramid Solution" style="max-height:280px; width:auto; margin:0 auto; object-fit:contain;">
+                    <div style="margin-top:16px; font-weight:700; color:#8c6508; font-size:15px;">
+                        ✨ शास्त्रीय ऊर्जा पिरॅमिड व दिशा दोष निवारण
                     </div>
                 </div>
             </div>
@@ -69,159 +59,136 @@
     </div>
 </section>
 
-<!-- Service 2: Numerology Detailed -->
-<section class="py-20 bg-slate-50" id="numerology">
+<!-- Service 2: Numerology -->
+<section style="padding:70px 0; background:#fbf7ee;" id="numerology">
     <div class="container m-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="order-2 lg:order-1 relative">
-                <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-purple-200">
-                    <img src="./img/banner4.jpg" alt="Numerology Calculations" class="w-full h-[420px] object-cover">
-                </div>
-                <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg border border-purple-100 max-w-xs hidden sm:block">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-purple-700 text-white flex items-center justify-center font-bold">
-                            <i class="ti ti-numbers"></i>
-                        </div>
-                        <div>
-                            <h5 class="text-xs font-bold text-gray-800 m-0">अंकांचे चुंबकीय कंपन</h5>
-                            <p class="text-[11px] text-gray-500 m-0">नाव व नंबरचे अचूक सिंक्रोनायझेशन</p>
-                        </div>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:center;">
+            <div style="text-align:center;">
+                <div style="border-radius:20px; overflow:hidden; border:4px solid #ebd7b5; box-shadow:0 12px 30px rgba(0,0,0,0.08); background:#ffffff; padding:30px;">
+                    <img src="./img/product-numerology.jpg" alt="Numerology Consultation" style="max-height:280px; width:auto; margin:0 auto; object-fit:contain;">
+                    <div style="margin-top:16px; font-weight:700; color:#3730a3; font-size:15px;">
+                        🔢 जन्मतारीख व अंकांचे चुंबकीय कंपन
                     </div>
                 </div>
             </div>
 
-            <div class="order-1 lg:order-2">
-                <span class="inline-block bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold mb-2">
-                    सेवा २ • अंकांचे रहस्य
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <div>
+                <span class="vv-section-sub" style="color:#3730a3;">सेवा २ • अंकांचे गूढ विज्ञान</span>
+                <h2 style="font-size:32px; font-weight:800; color:#1a202c; margin:0 0 14px; line-height:1.25;">
                     न्यूमरोलॉजी कन्सल्टेशन (अंकशास्त्र)
                 </h2>
-                <div class="w-16 h-1 bg-purple-600 mb-6 rounded"></div>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    तुमची जन्मतारीख ही तुमच्या आयुष्याचा ब्लूप्रिंट असते. जन्मतारखेनुसार तुमचा मूलांक (Driver Number) आणि भाग्यांक (Conductor Number) ठरतो. तुमचे नाव किंवा मोबाईल नंबर जर या अंकांसोबत जुळत नसेल तर अपार कष्ट करूनही यश हुलकावणी देते.
+                <div style="width:50px; height:3px; background:#3730a3; margin-bottom:20px; border-radius:2px;"></div>
+                <p style="font-size:15px; line-height:1.7; color:#4a5568; margin-bottom:16px;">
+                    तुमची जन्मतारीख ही तुमच्या आयुष्याचा मॅप असते. जन्मतारखेनुसार तुमचा मूलांक आणि भाग्यांक ठरतो. तुमचे नाव किंवा मोबाईल नंबर जर या अंकांसोबत मॅच होत नसेल तर अपार मेहनत करूनही यश मिळत नाही.
                 </p>
-                <div class="space-y-3 mb-8">
-                    <div class="p-3 bg-white rounded-lg border border-purple-100 flex items-start gap-3">
-                        <i class="ti ti-sparkles text-purple-700 text-xl flex-shrink-0 mt-0.5"></i>
+                <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:26px;">
+                    <div style="background:#ffffff; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-signature" style="color:#3730a3; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Name Correction (नाव शुद्धीकरण)</h4>
-                            <p class="text-xs text-gray-600">कागदपत्रे न बदलता, दैनंदिन सही (Signature) आणि सोशल स्पेलिंगमध्ये 1-2 अक्षरांचा सूक्ष्म बदल करून भाग्योदय घडवणे.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">Name Correction (नाव स्पेलिंग शुद्धीकरण)</strong>
+                            <span style="font-size:13px; color:#666;">कागदपत्रे न बदलता फक्त सही (Signature) आणि सोशल स्पेलिंगमध्ये सूक्ष्म बदल करून भाग्योदय घडवणे.</span>
                         </div>
                     </div>
-                    <div class="p-3 bg-white rounded-lg border border-purple-100 flex items-start gap-3">
-                        <i class="ti ti-device-mobile text-purple-700 text-xl flex-shrink-0 mt-0.5"></i>
+                    <div style="background:#ffffff; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-device-mobile" style="color:#3730a3; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Mobile Numerology (लकी मोबाईल नंबर)</h4>
-                            <p class="text-xs text-gray-600">दिवसभर वापरला जाणारा मोबाईल नंबर तुमच्या व्यवसायाला आणि धनाला पूरक असावा यासाठी अचूक नंबर विश्लेषण.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">Mobile Numerology (लकी मोबाईल नंबर)</strong>
+                            <span style="font-size:13px; color:#666;">दिवसभर वापरला जाणारा मोबाईल नंबर तुमच्या व्यवसायाला आणि धनाला पूरक असावा यासाठी अचूक विश्लेषण.</span>
                         </div>
                     </div>
-                    <div class="p-3 bg-white rounded-lg border border-purple-100 flex items-start gap-3">
-                        <i class="ti ti-building-store text-purple-700 text-xl flex-shrink-0 mt-0.5"></i>
+                    <div style="background:#ffffff; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-building-store" style="color:#3730a3; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">Business & Brand Name Balancing</h4>
-                            <p class="text-xs text-gray-600">नवीन फर्म, दुकान, प्रॉडक्ट किंवा स्टार्टअपचे नाव असे असावे जे बाजारात ब्रँड व्हॅल्यू निर्माण करेल.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">Business & Brand Name Balancing</strong>
+                            <span style="font-size:13px; color:#666;">नवीन फर्म, दुकान, प्रॉडक्ट किंवा स्टार्टअपचे नाव असे असावे जे बाजारात ब्रँड व्हॅल्यू निर्माण करेल.</span>
                         </div>
                     </div>
                 </div>
-                <a href="consultation.php?service=numerology" class="big_btn bg-purple-700 hover:bg-purple-800">न्यूमरोलॉजी सल्ला बुक करा →</a>
+                <a href="consultation.php?service=numerology" class="vv-btn-primary" style="background:#3730a3;">न्यूमरोलॉजी सल्ला बुक करा →</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Service 3: Astrology Guidance Detailed -->
-<section class="py-20 bg-white" id="astrology">
+<!-- Service 3: Astrology -->
+<section style="padding:70px 0; background:#ffffff;" id="astrology">
     <div class="container m-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:center;">
             <div>
-                <span class="inline-block bg-rose-100 text-rose-800 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold mb-2">
-                    सेवा ३ • भविष्य व ग्रह मार्गदर्शन
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <span class="vv-section-sub" style="color:#8b1e28;">सेवा ३ • भविष्य व ग्रह मार्गदर्शन</span>
+                <h2 style="font-size:32px; font-weight:800; color:#1a202c; margin:0 0 14px; line-height:1.25;">
                     अचूक ज्योतिष मार्गदर्शन (Astrology Guidance)
                 </h2>
-                <div class="w-16 h-1 bg-rose-600 mb-6 rounded"></div>
-                <p class="text-gray-700 leading-relaxed mb-4">
-                    वैदिक ज्योतिषशास्त्र हा भविष्याची दिशा दाखवणारा आरसा आहे. ग्रह आणि नक्षत्रांची स्थिती आपल्या जीवनातील चढ-उतार नियंत्रित करते. अचूक जन्मकुंडली अभ्यासाने संकट येण्यापूर्वीच योग्य सावधगिरी बाळगता येते.
+                <div style="width:50px; height:3px; background:#8b1e28; margin-bottom:20px; border-radius:2px;"></div>
+                <p style="font-size:15px; line-height:1.7; color:#4a5568; margin-bottom:16px;">
+                    वैदिक ज्योतिषशास्त्र हा भविष्याची दिशा दाखवणारा आरसा आहे. ग्रह आणि नक्षत्रांची स्थिती आपल्या जीवनातील चढ-उतार नियंत्रित करते. अचूक जन्मकुंडली अभ्यासाने संकटांवर मात करणे सोपे होते.
                 </p>
-                <div class="space-y-3 mb-8">
-                    <div class="p-3 bg-rose-50 rounded-lg flex items-start gap-3">
-                        <i class="ti ti-stars text-rose-700 text-xl flex-shrink-0 mt-0.5"></i>
+                <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:26px;">
+                    <div style="background:#fdfbf7; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-stars" style="color:#8b1e28; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">संपूर्ण जन्मकुंडली विश्लेषण (Kundali Analysis)</h4>
-                            <p class="text-xs text-gray-600">लग्न, राशी, चालू महादशा-अंतर्दशा, साडेसाती व ग्रहगोचर यांचा सविस्तर अभ्यास.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">संपूर्ण जन्मकुंडली विश्लेषण (Kundali Analysis)</strong>
+                            <span style="font-size:13px; color:#666;">लग्न, राशी, चालू महादशा-अंतर्दशा, साडेसाती व ग्रहगोचर यांचा सविस्तर अभ्यास.</span>
                         </div>
                     </div>
-                    <div class="p-3 bg-rose-50 rounded-lg flex items-start gap-3">
-                        <i class="ti ti-briefcase text-rose-700 text-xl flex-shrink-0 mt-0.5"></i>
+                    <div style="background:#fdfbf7; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-briefcase" style="color:#8b1e28; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">करिअर, नोकरी व व्यवसाय निर्णय</h4>
-                            <p class="text-xs text-gray-600">कोणत्या क्षेत्रात यश मिळेल? भागीदारी योग्य आहे का? नवीन व्यवसाय कधी सुरू करावा?</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">करिअर, नोकरी व व्यवसाय निर्णय</strong>
+                            <span style="font-size:13px; color:#666;">कोणत्या क्षेत्रात यश मिळेल? भागीदारी योग्य आहे का? योग्य वेळ कधी येईल?</span>
                         </div>
                     </div>
-                    <div class="p-3 bg-rose-50 rounded-lg flex items-start gap-3">
-                        <i class="ti ti-heart-handshake text-rose-700 text-xl flex-shrink-0 mt-0.5"></i>
+                    <div style="background:#fdfbf7; border:1px solid #ebd7b5; border-radius:12px; padding:14px; display:flex; gap:12px; align-items:flex-start;">
+                        <i class="ti ti-heart-handshake" style="color:#8b1e28; font-size:22px; flex-shrink:0;"></i>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-900">विवाह गुणमिलन व कौटुंबिक मार्गदर्शन</h4>
-                            <p class="text-xs text-gray-600">विवाह जुळवणी, नात्यांमधील दुरावा दूर करणे आणि मुलांच्या शिक्षणाबाबत योग्य सल्ला.</p>
+                            <strong style="color:#1a202c; font-size:15px; display:block; margin-bottom:2px;">विवाह गुणमिलन व कौटुंबिक सौख्य</strong>
+                            <span style="font-size:13px; color:#666;">विवाह जुळवणी, नात्यांमधील दुरावा दूर करणे आणि मुलांच्या शिक्षणाबाबत मार्गदर्शन.</span>
                         </div>
                     </div>
                 </div>
-                <a href="consultation.php?service=astrology" class="big_btn bg-rose-700 hover:bg-rose-800">कुंडली मार्गदर्शन बुक करा →</a>
+                <a href="consultation.php?service=astrology" class="vv-btn-primary" style="background:#8b1e28;">कुंडली मार्गदर्शन बुक करा →</a>
             </div>
 
-            <div class="relative">
-                <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-rose-200">
-                    <img src="./img/v708-aum-24-b-diwali.jpg" alt="Astrology Guidance" class="w-full h-[420px] object-cover">
+            <div style="text-align:center;">
+                <div style="border-radius:20px; overflow:hidden; border:4px solid #ebd7b5; box-shadow:0 12px 30px rgba(0,0,0,0.08); background:#fdfbf7; padding:30px;">
+                    <img src="./img/product-citrine.jpg" alt="Astrology Gemstone Remedies" style="max-height:280px; width:auto; margin:0 auto; object-fit:contain;">
+                    <div style="margin-top:16px; font-weight:700; color:#8b1e28; font-size:15px;">
+                        ✨ ग्रह शांती व अनुकूल रत्न सल्ला
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Consultation Process Flow -->
-<section class="py-16 bg-amber-50/50 border-t border-amber-200">
+<!-- Process Steps -->
+<section style="padding:60px 0; background:#fbf7ee; border-top:1px solid #ebd7b5;">
     <div class="container m-auto px-4">
-        <div class="section-title text-center mb-12">
-            <span class="mini-title">
-                ✨ सोपी आणि पारदर्शक पद्धत
-            </span>
-            <h2>
-                कन्सल्टेशन प्रक्रिया कशी चालते?
-            </h2>
-            <div class="divider">
-                ☸
-            </div>
+        <div class="vv-section-header">
+            <span class="vv-section-sub">✨ सोपी व पारदर्शक पद्धत</span>
+            <h2 class="vv-section-title">कन्सल्टेशन प्रक्रिया कशी चालते?</h2>
+            <div class="vv-divider-sym">☸</div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-amber-100">
-                <div class="w-12 h-12 mx-auto mb-3 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    1
-                </div>
-                <h4 class="font-bold text-base mb-1 text-gray-900">अपॉइंटमेंट नोंदणी</h4>
-                <p class="text-xs text-gray-600">फॉर्म किंवा WhatsApp द्वारे संपर्क साधून सोयीस्कर वेळ ठरवणे.</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px;">
+            <div class="vv-why-card">
+                <div class="vv-why-icon" style="background:#aa770d; color:#fff; font-weight:800; font-size:20px;">1</div>
+                <h4>नोंदणी</h4>
+                <p>फॉर्म किंवा WhatsApp द्वारे संपर्क करून सोयीस्कर वेळ ठरवणे.</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-amber-100">
-                <div class="w-12 h-12 mx-auto mb-3 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    2
-                </div>
-                <h4 class="font-bold text-base mb-1 text-gray-900">माहिती व अभ्यास</h4>
-                <p class="text-xs text-gray-600">घराचा नकाशा, जन्मतारीख व समस्यांचे बारकाईने विश्लेषण.</p>
+            <div class="vv-why-card">
+                <div class="vv-why-icon" style="background:#aa770d; color:#fff; font-weight:800; font-size:20px;">2</div>
+                <h4>अभ्यास</h4>
+                <p>घराचा नकाशा, जन्मतारीख व समस्यांचे बारकाईने विश्लेषण.</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-amber-100">
-                <div class="w-12 h-12 mx-auto mb-3 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    3
-                </div>
-                <h4 class="font-bold text-base mb-1 text-gray-900">थेट सल्ला व मार्गदर्शन</h4>
-                <p class="text-xs text-gray-600">प्रत्यक्ष भेट किंवा ऑनलाइन व्हिडिओ कॉल द्वारे सविस्तर चर्चा.</p>
+            <div class="vv-why-card">
+                <div class="vv-why-icon" style="background:#aa770d; color:#fff; font-weight:800; font-size:20px;">3</div>
+                <h4>थेट सल्ला</h4>
+                <p>प्रत्यक्ष भेट किंवा ऑनलाइन व्हिडिओ कॉल द्वारे सविस्तर चर्चा.</p>
             </div>
-            <div class="p-6 bg-white rounded-xl shadow-sm border border-amber-100">
-                <div class="w-12 h-12 mx-auto mb-3 bg-amber-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                    4
-                </div>
-                <h4 class="font-bold text-base mb-1 text-gray-900">अचूक उपाय व फॉलोअप</h4>
-                <p class="text-xs text-gray-600">विना तोडफोड सोपे उपाय, लकी नंबर सेट करणे व सतत सहकार्य.</p>
+            <div class="vv-why-card">
+                <div class="vv-why-icon" style="background:#aa770d; color:#fff; font-weight:800; font-size:20px;">4</div>
+                <h4>उपाय व फॉलोअप</h4>
+                <p>विना तोडफोड सोपे उपाय, लकी नंबर सेट करणे व सतत सहकार्य.</p>
             </div>
         </div>
     </div>

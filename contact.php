@@ -1,104 +1,97 @@
 <?php include 'inc/header.php'; ?>
 
-<div class="inner_banner py-16 bg-gradient-to-r from-amber-700 to-amber-900 text-white text-center">
-    <h1 class="text-3xl md:text-5xl font-bold mb-2">संपर्क साधा (Contact Us)</h1>
-    <p class="text-amber-200 text-sm md:text-base max-w-xl mx-auto">
+<div class="inner_banner" style="padding:50px 0; background:linear-gradient(135deg, #8c6508 0%, #5c4103 100%); text-align:center; color:#fff;">
+    <h1 style="font-size:36px; font-weight:800; margin:0 0 8px;">संपर्क साधा (Contact Us)</h1>
+    <p style="font-size:15px; color:#f3dfbe; margin:0; max-width:650px; margin:0 auto;">
         वास्तू, न्यूमरोलॉजी किंवा ज्योतिष मार्गदर्शनासाठी आम्ही सदैव आपल्या सेवेत आहोत.
     </p>
 </div>
 
-<!-- Contact Section -->
-<section class="contact-section main-contact py-16">
+<section style="padding:70px 0; background:#fbf7ee;">
     <div class="container m-auto px-4">
-        <div class="contact-wrapper grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:40px; align-items:start;">
             <!-- Left Side: Contact Info -->
-            <div class="contact-info bg-white p-8 rounded-2xl shadow-lg border border-amber-100">
-                <div class="section-title mb-6">
-                    <span class="mini-title text-xs font-semibold text-amber-600 uppercase">
-                        ✨ वास्तुवर्धन संपर्क केंद्र
-                    </span>
-                    <h2 class="text-3xl font-bold text-gray-900">
-                        आम्हाला संपर्क करा
-                    </h2>
-                    <div class="divider">
-                        ☸
-                    </div>
-                </div>
-                <p class="contact-desc text-gray-600 mb-8 leading-relaxed">
-                    आपल्या घराच्या वास्तू तपासणीसाठी, नवीन प्लॉट/फ्लॅटच्या नकाशा परीक्षणासाठी, किंवा नाव शुद्धीकरण (न्यूमरोलॉजी) संदर्भात थेट चर्चा करा.
+            <div style="background:#ffffff; border-radius:24px; padding:36px; border:1px solid #ebd7b5; box-shadow:0 8px 24px rgba(0,0,0,0.05);">
+                <span class="vv-section-sub">✨ वास्तुवर्धन संपर्क केंद्र</span>
+                <h2 style="font-size:28px; font-weight:800; color:#1a202c; margin:0 0 14px;">
+                    थेट संपर्क व चौकशी
+                </h2>
+                <div style="width:50px; height:3px; background:#d49a1d; margin-bottom:20px; border-radius:2px;"></div>
+
+                <p style="font-size:15px; line-height:1.7; color:#555; margin-bottom:28px;">
+                    आपल्या घराच्या वास्तू तपासणीसाठी, नवीन फ्लॅटच्या नकाशा परीक्षणासाठी किंवा नाव शुद्धीकरणासाठी (Numerology) थेट चर्चा करा.
                 </p>
 
-                <div class="space-y-6">
-                    <div class="info-card flex items-start gap-4 p-4 rounded-xl bg-amber-50/60 border border-amber-100">
-                        <div class="icon w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+                <div style="display:flex; flex-direction:column; gap:20px;">
+                    <div style="display:flex; gap:16px; align-items:flex-start;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#faebd7; color:#8c6508; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0;">
                             <i class="ti ti-phone-call"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-base text-gray-900">मोबाईल व WhatsApp</h4>
-                            <p class="text-sm text-gray-600 mt-1">+91 98765 43210 / +91 91234 56789</p>
-                            <p class="text-xs text-amber-700 mt-1 font-semibold">सोमवार ते शनिवार: सकाळी १०:०० ते संध्याकाळी ७:००</p>
+                            <strong style="display:block; font-size:16px; color:#1a202c;">फोन व WhatsApp</strong>
+                            <div style="font-size:14px; color:#555; margin-top:2px;">+91 98765 43210</div>
+                            <span style="font-size:12px; color:#8c6508; font-weight:600;">सोमवार ते शनिवार: सकाळी १० ते संध्याकाळी ७</span>
                         </div>
                     </div>
 
-                    <div class="info-card flex items-start gap-4 p-4 rounded-xl bg-amber-50/60 border border-amber-100">
-                        <div class="icon w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+                    <div style="display:flex; gap:16px; align-items:flex-start;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#faebd7; color:#8c6508; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0;">
                             <i class="ti ti-mail"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-base text-gray-900">ईमेल संपर्क</h4>
-                            <p class="text-sm text-gray-600 mt-1">contact@vastuvardhaan.com</p>
-                            <p class="text-xs text-gray-500 mt-1">२४ तासांच्या आत प्रतिसाद दिला जाईल</p>
+                            <strong style="display:block; font-size:16px; color:#1a202c;">अधिकृत ईमेल</strong>
+                            <div style="font-size:14px; color:#555; margin-top:2px;">contact@vastuvardhaan.com</div>
+                            <span style="font-size:12px; color:#888;">२४ तासांच्या आत प्रतिसाद दिला जाईल</span>
                         </div>
                     </div>
 
-                    <div class="info-card flex items-start gap-4 p-4 rounded-xl bg-amber-50/60 border border-amber-100">
-                        <div class="icon w-12 h-12 rounded-full bg-amber-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+                    <div style="display:flex; gap:16px; align-items:flex-start;">
+                        <div style="width:48px; height:48px; border-radius:50%; background:#faebd7; color:#8c6508; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0;">
                             <i class="ti ti-award"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-base text-gray-900">प्रमाणित व सन्मानित केंद्र</h4>
-                            <p class="text-sm text-gray-600 mt-1">वेदऋषी फाउंडेशन व संशोधन केंद्र, पुणे तर्फे सन्मानित</p>
-                            <p class="text-xs text-gray-500 mt-1">ISO 9001:2015 प्रमाणित पद्धती</p>
+                            <strong style="display:block; font-size:16px; color:#1a202c;">सन्मानित व प्रमाणित केंद्र</strong>
+                            <div style="font-size:13px; color:#555; margin-top:2px;">वेदऋषी फाउंडेशन आणि संशोधन केंद्र, पुणे तर्फे सन्मानित</div>
+                            <span style="font-size:12px; color:#888;">ISO 9001:2015 प्रमाणित पद्धती</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Side: Contact / Inquiry Form -->
-            <div class="contact-form-box bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-amber-100">
-                <h3 class="text-2xl font-bold text-gray-900 mb-2">संदेश पाठवा (Send Message)</h3>
-                <p class="text-xs text-gray-500 mb-6">खालील फॉर्म भरा, आमचे प्रतिनिधी त्वरित आपल्याशी संपर्क साधतील.</p>
+            <!-- Right Side: Inquiry Form -->
+            <div style="background:#ffffff; border-radius:24px; padding:36px; border:1px solid #ebd7b5; box-shadow:0 8px 24px rgba(0,0,0,0.05);">
+                <h3 style="font-size:24px; font-weight:800; color:#1a202c; margin:0 0 6px;">संदेश पाठवा (Send Message)</h3>
+                <p style="font-size:13px; color:#666; margin:0 0 20px;">खालील फॉर्म भरा, आमचे प्रतिनिधी संपर्क साधतील.</p>
 
-                <form action="#" method="POST" class="space-y-4">
+                <form action="#" method="POST" style="display:flex; flex-direction:column; gap:14px;">
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">आपले पूर्ण नाव *</label>
-                        <input type="text" name="name" required placeholder="नाव लिहा" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                        <label style="display:block; font-size:13px; font-weight:700; margin-bottom:4px; color:#4a5568;">आपले नाव *</label>
+                        <input type="text" name="name" required placeholder="नाव लिहा" style="width:100%; padding:11px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
                         <div>
-                            <label class="block text-xs font-bold text-gray-700 mb-1">मोबाईल नंबर *</label>
-                            <input type="tel" name="phone" required placeholder="१० अंकी नंबर" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                            <label style="display:block; font-size:13px; font-weight:700; margin-bottom:4px; color:#4a5568;">मोबाईल नंबर *</label>
+                            <input type="tel" name="phone" required placeholder="१० अंकी नंबर" style="width:100%; padding:11px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-700 mb-1">ईमेल</label>
-                            <input type="email" name="email" placeholder="ईमेल आयडी" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                            <label style="display:block; font-size:13px; font-weight:700; margin-bottom:4px; color:#4a5568;">ईमेल</label>
+                            <input type="email" name="email" placeholder="ईमेल पत्ता" style="width:100%; padding:11px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                         </div>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">विषय / चौकशी प्रकार *</label>
-                        <select name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none text-sm">
+                        <label style="display:block; font-size:13px; font-weight:700; margin-bottom:4px; color:#4a5568;">चौकशी विषय *</label>
+                        <select name="subject" style="width:100%; padding:11px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;">
                             <option value="vastu">वास्तुशास्त्र सल्ला (Residential / Commercial)</option>
                             <option value="numerology">न्यूमरोलॉजी व नाव शुद्धीकरण</option>
                             <option value="astrology">जन्मकुंडली मार्गदर्शन</option>
-                            <option value="products">वास्तू प्रॉडक्ट्स खरेदी</option>
-                            <option value="general">इतर चौकशी</option>
+                            <option value="products">वास्तू ब्रेसलेट्स व प्रॉडक्ट्स</option>
                         </select>
                     </div>
                     <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">आपला संदेश</label>
-                        <textarea name="message" rows="4" placeholder="आपली समस्या किंवा विचारणा येथे लिहा..." class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none text-sm"></textarea>
+                        <label style="display:block; font-size:13px; font-weight:700; margin-bottom:4px; color:#4a5568;">आपला संदेश</label>
+                        <textarea name="message" rows="4" placeholder="आपली विचारणा येथे लिहा..." style="width:100%; padding:11px 14px; border:1px solid #d2d6dc; border-radius:8px; font-size:14px; outline:none; box-sizing:border-box;"></textarea>
                     </div>
-                    <button type="submit" class="big_btn w-full text-center py-3 text-base">
+                    <button type="submit" class="vv-btn-primary" style="width:100%; border:none; cursor:pointer; padding:13px; font-size:16px; margin-top:8px;">
                         संदेश पाठवा →
                     </button>
                 </form>
