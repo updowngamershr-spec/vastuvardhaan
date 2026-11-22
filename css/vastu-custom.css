@@ -1,41 +1,44 @@
 /* ==========================================================================
-   Vastuvardhaan - Dedicated Custom Theme & Mobile-Responsive CSS
+   Vastuvardhaan - Luxury Cream & Royal Maroon Custom Theme
+   Unique Bespoke Design (No template clone)
    ========================================================================== */
 
-/* Global Typography - Native Devanagari & Latin support */
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --vv-primary: #b8860b;
-    --vv-primary-dark: #8c6508;
-    --vv-maroon: #7a1f26;
-    --vv-bg-cream: #fdfbf7;
-    --vv-border-gold: rgba(184, 134, 11, 0.25);
+    --vv-maroon-deep: #5b0f19;
+    --vv-maroon: #701420;
+    --vv-maroon-light: #8a1d2c;
+    --vv-gold: #c8962c;
+    --vv-gold-light: #e5b657;
+    --vv-cream-bg: #fbf7f0;
+    --vv-cream-card: #ffffff;
+    --vv-cream-alt: #f5eedf;
+    --vv-border: #ebd9c0;
+    --vv-text-dark: #1e1b18;
+    --vv-text-muted: #574e44;
 }
 
 body, button, input, select, textarea {
     font-family: 'Mukta', 'Poppins', sans-serif !important;
-    color: #2d3748;
-    background-color: var(--vv-bg-cream);
+    color: var(--vv-text-dark);
+    background-color: var(--vv-cream-bg);
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Mukta', 'Poppins', sans-serif !important;
     font-weight: 700;
-    line-height: 1.3;
+    color: var(--vv-text-dark);
+    line-height: 1.28;
 }
 
-/* Header & Navigation Fixes */
+/* Header */
 .navigation {
     background: #ffffff;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    border-bottom: 2px solid var(--vv-gold);
+    box-shadow: 0 4px 15px rgba(91, 15, 25, 0.05);
     padding: 10px 0;
-}
-
-.navigation .logo {
-    display: flex;
-    align-items: center;
 }
 
 .navigation .logo img {
@@ -45,168 +48,199 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: contain;
 }
 
-/* Hero Section */
-.vv-hero-section {
+.menus ul li a {
+    color: var(--vv-maroon-deep) !important;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.menus ul li a:hover, .menus ul li a.active {
+    color: var(--vv-gold) !important;
+}
+
+/* ==========================================================================
+   ORIGINAL BESPOKE HERO BANNER (Luxury Cream & Maroon Layout)
+   ========================================================================== */
+.vv-hero-original {
     position: relative;
-    padding: 60px 0 40px;
-    background: radial-gradient(circle at 75% 40%, #fff7eb 0%, #faebd7 50%, #f6e3c5 100%);
+    padding: 70px 0 50px;
+    background: linear-gradient(135deg, #fdfaf4 0%, #f7efe1 50%, #f0e3cc 100%);
     overflow: hidden;
 }
 
-.vv-hero-grid {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+/* Subtle sacred aura watermark backdrop */
+.vv-hero-original::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 150, 44, 0.08) 0%, rgba(112, 20, 32, 0.04) 50%, transparent 70%);
+    pointer-events: none;
+}
+
+.vv-hero-layout {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 40px;
+    align-items: center;
 }
 
 @media (min-width: 992px) {
-    .vv-hero-grid {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .vv-hero-text {
-        flex: 1.1;
-    }
-    .vv-hero-image-wrap {
-        flex: 0.9;
-        display: flex;
-        justify-content: center;
+    .vv-hero-layout {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 50px;
     }
 }
 
-.vv-badge {
+.vv-hero-badge-pill {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #fff;
-    border: 1px solid #e0c598;
-    padding: 6px 16px;
-    border-radius: 50px;
+    background: #ffffff;
+    border: 1.5px solid var(--vv-gold);
+    padding: 6px 18px;
+    border-radius: 30px;
     font-size: 14px;
-    font-weight: 600;
-    color: #8c6508;
-    margin-bottom: 18px;
-    box-shadow: 0 2px 8px rgba(184, 134, 11, 0.12);
+    font-weight: 700;
+    color: var(--vv-maroon);
+    box-shadow: 0 4px 12px rgba(112, 20, 32, 0.08);
+    margin-bottom: 20px;
 }
 
-.vv-badge-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #10b981;
-}
-
-.vv-hero-title {
-    font-size: 32px;
+.vv-hero-title-main {
+    font-size: 34px;
     font-weight: 800;
-    color: #1a202c;
-    margin-bottom: 16px;
+    color: var(--vv-maroon-deep);
+    margin: 0 0 16px;
     line-height: 1.25;
 }
 
+.vv-hero-title-main span.gold-txt {
+    color: var(--vv-gold);
+    display: inline-block;
+}
+
 @media (min-width: 768px) {
-    .vv-hero-title {
-        font-size: 42px;
+    .vv-hero-title-main {
+        font-size: 44px;
     }
 }
 
-.vv-hero-subtitle {
+.vv-hero-lead {
     font-size: 16px;
-    color: #4a5568;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: var(--vv-text-muted);
     margin-bottom: 24px;
 }
 
-.vv-btn-row {
+.vv-hero-lead strong {
+    color: var(--vv-maroon);
+}
+
+/* Feature Badges under Lead */
+.vv-hero-highlights {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin-bottom: 24px;
+    gap: 12px;
+    margin-bottom: 28px;
 }
 
-.vv-btn-primary {
-    background: linear-gradient(135deg, #d49a1d 0%, #aa770d 100%);
-    color: #fff !important;
-    padding: 12px 28px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 16px;
-    box-shadow: 0 4px 14px rgba(170, 119, 13, 0.35);
-    transition: all 0.25s ease;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-}
-
-.vv-btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(170, 119, 13, 0.45);
-}
-
-.vv-btn-secondary {
+.vv-highlight-item {
     background: #ffffff;
-    color: #8c6508 !important;
-    border: 2px solid #d49a1d;
-    padding: 11px 26px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 16px;
-    transition: all 0.25s ease;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-}
-
-.vv-btn-secondary:hover {
-    background: #fdf6ec;
-}
-
-/* Hero Portrait Visual (Replacing Yantra with Clean Sacred Glow Backdrop) */
-.vv-portrait-container {
-    position: relative;
+    border: 1px solid var(--vv-border);
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--vv-maroon-deep);
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 320px;
-    height: 420px;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 
-@media (max-width: 640px) {
-    .vv-portrait-container {
-        width: 270px;
-        height: 360px;
-    }
+.vv-highlight-item i {
+    color: var(--vv-gold);
+    font-size: 18px;
 }
 
-.vv-portrait-aura {
-    position: absolute;
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(230, 180, 70, 0.45) 0%, rgba(212, 154, 29, 0.15) 60%, transparent 75%);
-    filter: blur(8px);
-    animation: vvPulse 4s infinite ease-in-out;
+/* CTA Buttons */
+.vv-btn-maroon {
+    background: linear-gradient(135deg, var(--vv-maroon) 0%, var(--vv-maroon-deep) 100%);
+    color: #ffffff !important;
+    padding: 13px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 6px 18px rgba(112, 20, 32, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    border: none;
+    cursor: pointer;
 }
 
-@keyframes vvPulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.08); opacity: 1; }
+.vv-btn-maroon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(112, 20, 32, 0.45);
+    background: linear-gradient(135deg, var(--vv-maroon-light) 0%, var(--vv-maroon) 100%);
 }
 
-.vv-portrait-frame {
+.vv-btn-cream-outline {
+    background: #ffffff;
+    color: var(--vv-maroon) !important;
+    border: 2px solid var(--vv-gold);
+    padding: 11px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.vv-btn-cream-outline:hover {
+    background: var(--vv-cream-alt);
+    border-color: var(--vv-maroon);
+}
+
+/* Right Side: Creative Executive Shield / Card Composition */
+.vv-hero-card-composition {
     position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 180px 180px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.vv-portrait-royal-shield {
+    position: relative;
+    width: 320px;
+    height: 410px;
+    border-radius: 30px;
     overflow: hidden;
-    border: 4px solid #c99320;
-    box-shadow: 0 16px 40px rgba(170, 119, 13, 0.3);
-    background: linear-gradient(180deg, #fff7eb 0%, #e8d0ad 100%);
+    border: 5px solid var(--vv-gold);
+    box-shadow: 0 20px 45px rgba(91, 15, 25, 0.25);
+    background: linear-gradient(180deg, #ffffff 0%, #faebd7 100%);
     z-index: 2;
 }
 
-.vv-portrait-frame img {
+@media (max-width: 640px) {
+    .vv-portrait-royal-shield {
+        width: 270px;
+        height: 350px;
+    }
+}
+
+.vv-portrait-royal-shield img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -214,28 +248,67 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-.vv-portrait-tag {
+/* Floating Award Badge attached to hero photo */
+.vv-hero-floating-badge {
     position: absolute;
-    bottom: 12px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(140, 101, 8, 0.95);
+    background: var(--vv-maroon-deep);
+    border: 2px solid var(--vv-gold);
     color: #ffffff;
-    padding: 6px 18px;
+    padding: 8px 22px;
     border-radius: 30px;
     font-size: 13px;
     font-weight: 700;
     white-space: nowrap;
     z-index: 3;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
-/* Trust Counters Strip */
+/* Floating ISO Trust Card on top corner */
+.vv-hero-float-iso {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    background: #ffffff;
+    border: 1px solid var(--vv-gold);
+    border-radius: 12px;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    z-index: 4;
+}
+
+.vv-hero-float-iso i {
+    color: var(--vv-gold);
+    font-size: 20px;
+}
+
+.vv-hero-float-iso span {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--vv-maroon);
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .vv-hero-float-iso {
+        left: 5px;
+        top: 5px;
+    }
+}
+
+/* ==========================================================================
+   Trust Strip
+   ========================================================================== */
 .vv-trust-strip {
     background: #ffffff;
-    border-top: 1px solid #ebd7b5;
-    border-bottom: 1px solid #ebd7b5;
-    padding: 24px 0;
+    border-top: 1px solid var(--vv-border);
+    border-bottom: 2px solid var(--vv-gold);
+    padding: 26px 0;
 }
 
 .vv-trust-grid {
@@ -254,46 +327,54 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-trust-card {
     background: #fdfbf7;
-    border: 1px solid #f0e2cc;
-    border-radius: 12px;
+    border: 1px solid var(--vv-border);
+    border-radius: 14px;
     padding: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 8px rgba(91, 15, 25, 0.03);
+    transition: transform 0.2s;
+}
+
+.vv-trust-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--vv-gold);
 }
 
 .vv-trust-card h3 {
     font-size: 26px;
-    color: #9c6c09;
+    color: var(--vv-maroon);
     font-weight: 800;
     margin: 0;
 }
 
 .vv-trust-card p {
     font-size: 13px;
-    color: #555;
+    color: var(--vv-text-muted);
     margin: 4px 0 0;
-    font-weight: 500;
+    font-weight: 600;
 }
 
-/* Section Title Generic */
+/* ==========================================================================
+   Section Headers (Cream & Maroon)
+   ========================================================================== */
 .vv-section-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 
 .vv-section-sub {
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #9c6c09;
+    letter-spacing: 1.2px;
+    color: var(--vv-gold);
     margin-bottom: 6px;
     display: block;
 }
 
 .vv-section-title {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 800;
-    color: #1a202c;
+    color: var(--vv-maroon-deep);
     margin: 0 0 10px;
 }
 
@@ -301,23 +382,25 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    color: #d49a1d;
+    gap: 14px;
+    color: var(--vv-gold);
     font-size: 18px;
     margin: 0 auto;
 }
 
 .vv-divider-sym::before, .vv-divider-sym::after {
     content: "";
-    height: 1px;
-    width: 50px;
-    background: #d49a1d;
+    height: 1.5px;
+    width: 60px;
+    background: var(--vv-gold);
 }
 
-/* Core Services Grid */
+/* ==========================================================================
+   Core Services (Maroon & Cream Cards)
+   ========================================================================== */
 .vv-services-section {
-    padding: 60px 0;
-    background: #fbf7ee;
+    padding: 70px 0;
+    background: var(--vv-cream-bg);
 }
 
 .vv-services-grid {
@@ -334,58 +417,51 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-service-card {
     background: #ffffff;
-    border-radius: 18px;
-    border: 1px solid #ebd7b5;
+    border-radius: 20px;
+    border: 1px solid var(--vv-border);
     overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 20px rgba(91, 15, 25, 0.05);
     display: flex;
     flex-direction: column;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .vv-service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.09);
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(91, 15, 25, 0.12);
+    border-color: var(--vv-gold);
 }
 
 .vv-service-card-header {
     padding: 24px 20px;
-    color: #fff;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--vv-maroon) 0%, var(--vv-maroon-deep) 100%);
     position: relative;
-}
-
-.vv-service-card-header.bg-gold {
-    background: linear-gradient(135deg, #aa770d 0%, #7d5402 100%);
-}
-
-.vv-service-card-header.bg-maroon {
-    background: linear-gradient(135deg, #8b1e28 0%, #570c14 100%);
-}
-
-.vv-service-card-header.bg-indigo {
-    background: linear-gradient(135deg, #3730a3 0%, #1e1b4b 100%);
+    border-bottom: 3px solid var(--vv-gold);
 }
 
 .vv-service-tag {
     display: inline-block;
-    background: rgba(255,255,255,0.22);
-    padding: 3px 10px;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 3px 12px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 8px;
+    color: #ffffff;
 }
 
 .vv-service-card-header h3 {
     font-size: 22px;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
     margin: 0;
 }
 
 .vv-service-card-header p {
     font-size: 13px;
-    opacity: 0.9;
+    color: #fce8cc;
     margin: 4px 0 0;
 }
 
@@ -405,7 +481,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-service-list li {
     font-size: 14px;
-    color: #4a5568;
+    color: var(--vv-text-dark);
     margin-bottom: 12px;
     display: flex;
     align-items: flex-start;
@@ -414,10 +490,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vv-service-list li i {
-    color: #aa770d;
-    font-size: 16px;
-    margin-top: 2px;
+    color: var(--vv-gold);
+    font-size: 18px;
     flex-shrink: 0;
+    margin-top: 1px;
 }
 
 .vv-service-card-footer {
@@ -425,12 +501,14 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: space-between;
     padding-top: 16px;
-    border-top: 1px solid #f0e6d6;
+    border-top: 1px solid var(--vv-border);
 }
 
-/* Why Choose Us Grid */
+/* ==========================================================================
+   Why Choose Us
+   ========================================================================== */
 .vv-why-section {
-    padding: 60px 0;
+    padding: 70px 0;
     background: #ffffff;
 }
 
@@ -453,21 +531,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vv-why-card {
-    background: #fdfbf7;
-    border: 1px solid #ebd7b5;
-    border-radius: 14px;
+    background: var(--vv-cream-bg);
+    border: 1px solid var(--vv-border);
+    border-radius: 16px;
     padding: 24px 18px;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: transform 0.2s;
+}
+
+.vv-why-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--vv-gold);
 }
 
 .vv-why-icon {
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 58px;
     margin: 0 auto 16px;
     border-radius: 50%;
     background: #faebd7;
-    color: #9c6c09;
+    color: var(--vv-maroon);
+    border: 1.5px solid var(--vv-gold);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -476,21 +561,23 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-why-card h4 {
     font-size: 18px;
-    color: #1a202c;
+    color: var(--vv-maroon-deep);
     margin-bottom: 8px;
 }
 
 .vv-why-card p {
     font-size: 13px;
-    color: #666;
+    color: var(--vv-text-muted);
     line-height: 1.5;
     margin: 0;
 }
 
-/* Vastu Products Grid (All New Vastu Bracelets, Pyramids, Numerology Kits) */
+/* ==========================================================================
+   Products Section
+   ========================================================================== */
 .vv-products-section {
-    padding: 60px 0;
-    background: #fbf7ee;
+    padding: 70px 0;
+    background: var(--vv-cream-bg);
 }
 
 .vv-products-grid {
@@ -513,21 +600,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-product-card {
     background: #ffffff;
-    border-radius: 16px;
-    border: 1px solid #ebd7b5;
-    padding: 18px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    border-radius: 18px;
+    border: 1px solid var(--vv-border);
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(91, 15, 25, 0.04);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vv-product-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--vv-gold);
+    box-shadow: 0 8px 24px rgba(91, 15, 25, 0.1);
 }
 
 .vv-product-img-wrap {
-    height: 180px;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fdfbf7;
+    background: #fdfaf4;
     border-radius: 12px;
     margin-bottom: 14px;
     padding: 10px;
@@ -535,48 +629,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .vv-product-badge {
     display: inline-block;
-    background: #aa770d;
-    color: #fff;
+    background: var(--vv-maroon);
+    color: #ffffff;
     font-size: 11px;
     font-weight: 700;
-    padding: 3px 10px;
+    padding: 3px 12px;
     border-radius: 12px;
     margin-bottom: 8px;
 }
 
 .vv-product-card h3 {
     font-size: 17px;
-    color: #1a202c;
+    color: var(--vv-maroon-deep);
     margin-bottom: 6px;
 }
 
 .vv-product-card p {
     font-size: 13px;
-    color: #666;
+    color: var(--vv-text-muted);
     margin-bottom: 14px;
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
 .vv-product-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 12px;
-    border-top: 1px solid #f0e6d6;
+    padding-top: 14px;
+    border-top: 1px solid var(--vv-border);
 }
 
 .vv-price {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
-    color: #9c6c09;
+    color: var(--vv-maroon);
 }
 
-/* Footer Fixes (Robust CSS Grid, No overlapping) */
+/* ==========================================================================
+   Footer (Rich Deep Maroon & Cream)
+   ========================================================================== */
 .vv-footer {
-    background: #20170a;
-    color: #e2d9cd;
-    padding: 50px 0 20px;
-    border-top: 3px solid #aa770d;
+    background: var(--vv-maroon-deep);
+    color: #f7ede0;
+    padding: 55px 0 20px;
+    border-top: 4px solid var(--vv-gold);
 }
 
 .vv-footer-grid {
@@ -604,17 +700,17 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     max-width: 150px;
     object-fit: contain;
-    background: #fff;
+    background: #ffffff;
     padding: 3px 8px;
     border-radius: 6px;
 }
 
 .vv-footer-col h3 {
-    color: #d49a1d;
+    color: var(--vv-gold-light);
     font-size: 17px;
     font-weight: 700;
     margin-bottom: 14px;
-    border-bottom: 1px solid rgba(212, 154, 29, 0.25);
+    border-bottom: 1px solid rgba(200, 150, 44, 0.35);
     padding-bottom: 8px;
 }
 
@@ -629,19 +725,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vv-footer-col ul li a {
-    color: #d1c5b4;
+    color: #eddccb;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.2s;
+    transition: color 0.2s, padding-left 0.2s;
 }
 
 .vv-footer-col ul li a:hover {
-    color: #f3cf7a;
-    padding-left: 4px;
+    color: var(--vv-gold-light);
+    padding-left: 5px;
 }
 
 .vv-footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255,255,255,0.12);
     padding-top: 18px;
     display: flex;
     flex-direction: column;
@@ -649,7 +745,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 10px;
     text-align: center;
     font-size: 13px;
-    color: #9c9284;
+    color: #c9b9a6;
 }
 
 @media (min-width: 768px) {
