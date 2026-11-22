@@ -16,8 +16,8 @@
     <!-- Base Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- Dedicated Theme & Mobile Responsive Stylesheet -->
-    <link rel="stylesheet" href="css/vastu-custom.css">
+    <!-- Dedicated Theme & Mobile Responsive Stylesheet (with cache-busting) -->
+    <link rel="stylesheet" href="css/vastu-custom.css?v=<?php echo filemtime(__DIR__ . '/../css/vastu-custom.css'); ?>">
 </head>
 
 <body>
