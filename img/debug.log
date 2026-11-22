@@ -1,0 +1,38 @@
+[0525/112532.221:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
+[0529/194817.256:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
+[0530/191343.965:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0530/191348.981:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0530/205745.672:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0530/214906.432:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0530/214906.507:ERROR:browser_gpu_channel_host_factory.cc(139)] Failed to launch GPU process.
+[0531/013750.396:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/013751.345:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/013751.368:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/013751.397:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/013751.445:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090450.106:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090455.108:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090500.119:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090505.137:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090510.146:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090515.157:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090520.163:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090525.182:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090530.186:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090535.196:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090540.205:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090545.216:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090550.230:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090555.243:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090600.249:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090606.357:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090611.368:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090616.384:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090621.402:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090626.414:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090631.416:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090635.346:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/090635.367:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0531/191342.872:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0611/103356.529:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
+[0611/162033.017:ERROR:media_internals.cc(112)] Cannot get RenderProcessHost
